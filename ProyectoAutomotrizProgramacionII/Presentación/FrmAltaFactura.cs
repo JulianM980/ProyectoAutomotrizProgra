@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoAutomotrizProgramacionII
+namespace ProyectoAutomotrizProgramacionII.Presentación
 {
-    public partial class Form1 : Form
+    public partial class FrmAltaFactura : Form
     {
-        public Form1()
+        public FrmAltaFactura()
         {
             InitializeComponent();
+        }
+
+        private void FrmAltaFactura_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
