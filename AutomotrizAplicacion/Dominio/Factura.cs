@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Dominio
 {
-    internal class Factura
+    public class Factura
     {
         public Factura()
         {

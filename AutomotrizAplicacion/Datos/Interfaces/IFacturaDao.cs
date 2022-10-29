@@ -9,6 +9,10 @@ namespace AutomotrizAplicacion.Servicios.Interfaces
 {
     internal interface IFacturaDao
     {
-        bool InsertarFactura(Factura factura);
+        List<Factura> Obtener();
+
+        bool Insertar(Factura factura);
+        bool Actualizar(Factura factura);
+        bool BajaLogica(int idFactura);
     }
 }

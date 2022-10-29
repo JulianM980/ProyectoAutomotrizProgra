@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Dominio
 {
-    internal class Marca
+    public class Marca
     {
         public Marca()
         {
