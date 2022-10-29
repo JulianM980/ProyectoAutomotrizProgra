@@ -10,7 +10,22 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
 {
     internal class FacturaDao : IFacturaDao
     {
-        public bool InsertarFactura(Factura factura)
+        public bool Actualizar(Factura factura)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool BajaLogica(int idFactura)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Insertar(Factura factura)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Factura> Obtener()
         {
             throw new NotImplementedException();
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutomotrizAplicacion.Servicios
+namespace AutomotrizAplicacion.Datos
 {
     internal class Parametro
     {
@@ -15,6 +15,6 @@ namespace AutomotrizAplicacion.Servicios
         }
 
         public string Nombre { get; set; }
-        public Object Valor { get; set; }
+        public object Valor { get; set; }
     }
 }

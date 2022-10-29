@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Dominio
 {
-    internal class Producto
+    public class Producto
     {
         public Producto()
         {

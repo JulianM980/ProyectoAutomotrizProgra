@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Dominio
 {
-    internal class Vendedor : Persona
+    public class Vendedor : Persona
     {
         public Vendedor(int id, string nombre, string apellido, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc, int idVendedor, DateTime fechaIngreso, DateTime fechaBaja)
             :base(id,nombre,apellido,dni,nroTel,email,calle,altura,codPostal,codPostal)

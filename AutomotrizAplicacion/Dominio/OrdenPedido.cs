@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Dominio
 {
-    internal class OrdenPedido
+    public class OrdenPedido
     {
         public OrdenPedido()
         {
