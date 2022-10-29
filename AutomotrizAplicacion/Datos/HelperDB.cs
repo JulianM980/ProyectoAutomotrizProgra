@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RecetasSLN.datos
 {
@@ -16,7 +17,7 @@ namespace RecetasSLN.datos
         private SqlConnection cnn;
         private HelperDB()
         {
-            cnn = new SqlConnection();
+            cnn = new SqlConnection(@"Data Source=PC-JULIAN-MARTI\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True");
         }
         public static HelperDB ObtenerInstancia() {
             if (instancia == null) { 
@@ -108,5 +109,40 @@ namespace RecetasSLN.datos
             return resultado;
         }
         
+        public int Login(string usuario,string pass)
+        {
+            int aux;
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cnn;
+                cmd.CommandText = "Sp_Login";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@pass", pass);
+
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+
+                     aux=dr.GetInt32(0);
+                    return aux;
+                }
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
+            finally
+            {
+                cnn.Close();
+            }
+
+            return aux=-1;
+        }
+
     }
 }

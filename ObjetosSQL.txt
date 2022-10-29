@@ -1,0 +1,23 @@
+Create Table USUARIOS(
+id int identity(1,2),
+idVendedor int not null,
+usuario varchar(50) unique not null,
+pass varchar(50) not null,
+Constraint Pk_Id_Usuario primary key (id),
+Constraint FK_Id_Vendedor foreign key (idVendedor) References VENDEDORES(idVendedor))
+
+
+Select * from VENDEDORES v
+Join DATOS_PERSONALES D on D.idDatos=V.idDatosPersonales
+Where V.idDatosPersonales=D.idDatos
+
+Insert into USUARIOS(idVendedor,usuario,pass) values(1,'EzequielMedina','EzeMedina3014')
+Select * from USUARIOS
+
+Create Procedure Sp_Login
+@usuario varchar(50)='',
+@pass varchar(50)=''
+as
+Select top 1 Count(*)
+From USUARIOS
+Where usuario=@usuario AND pass=@pass
