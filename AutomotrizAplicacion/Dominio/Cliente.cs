@@ -15,7 +15,12 @@ namespace AutomotrizAplicacion.Dominio
             TipoCliente = tipoCliente;
             Estado = estado;
         }
-
+        public Cliente():base()
+        {
+            IdCliente = -1 ;
+            TipoCliente = -1;
+            Estado = false;
+        }
         public int IdCliente { get; set; }
         public int TipoCliente { get; set; }
         public bool Estado { get; set; }

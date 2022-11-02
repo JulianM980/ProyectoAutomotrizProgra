@@ -15,7 +15,12 @@ namespace AutomotrizAplicacion.Dominio
             FechaIngreso = fechaIngreso;
             FechaBaja = fechaBaja;
         }
-
+        public Vendedor():base()
+        {
+            IdVendedor = -1 ;
+            FechaIngreso = DateTime.Today;
+            FechaBaja = DateTime.Today;
+        }
         public int IdVendedor { get; set; }
         public DateTime FechaIngreso { get; set; }
         public DateTime FechaBaja { get; set; }

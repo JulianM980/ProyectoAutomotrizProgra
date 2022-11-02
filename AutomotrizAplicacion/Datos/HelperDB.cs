@@ -25,6 +25,30 @@ namespace RecetasSLN.datos
             }
             return instancia;
         }
+        public DataTable ConsultarSp(string sp)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand(sp, cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                dt.Load(cmd.ExecuteReader());
+            }
+            catch (Exception)
+            {
+
+                dt = null;
+            }
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                {
+                    cnn.Close();
+                }
+            }
+            return dt;
+        }
         public DataTable ConsultarSp(string sp,List<Parametro> param) {
             DataTable dt = new DataTable();
             try

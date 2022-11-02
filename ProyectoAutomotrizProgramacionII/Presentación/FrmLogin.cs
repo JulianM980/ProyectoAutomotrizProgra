@@ -12,7 +12,6 @@ namespace ProyectoAutomotrizProgramacionII
 {
     public partial class FrmLogin : Form
     {
-        private HelperDB helper;
         public FrmLogin()
         {
             InitializeComponent();

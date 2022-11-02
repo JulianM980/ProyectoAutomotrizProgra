@@ -11,11 +11,11 @@ namespace AutomotrizAplicacion.Dominio
         public Factura()
         {
             IdFactura = -1;
-            Cliente = null;
-            Vendedor = null;
+            Cliente = new Cliente();
+            Vendedor = new Vendedor();
             Fecha = DateTime.Today;
-            OrdenPedido = null;
-            Plan = null;
+            OrdenPedido = new OrdenPedido();
+            Plan = new AutoPlan();
             DetallesFactura = new List<DetalleDocumento>();
         }
         public Factura(int idFactura, Cliente cliente, Vendedor vendedor, DateTime fecha, OrdenPedido ordenPedido,AutoPlan plan, List<DetalleDocumento> detallesFactura)
