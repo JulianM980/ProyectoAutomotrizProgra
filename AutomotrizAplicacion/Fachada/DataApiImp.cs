@@ -27,14 +27,24 @@ namespace AutomotrizAplicacion.Fachada
             return dao.BajaLogica(idFactura);
         }
 
-        public bool InsertarFacturas(Factura factura)
+        public bool GuardarFacturas(Factura factura)
         {
             return dao.Insertar(factura);
+        }
+
+        public List<Producto> ObtenerProductos(string marca)
+        {
+            return dao.ObtenerProductos(marca);
         }
 
         public List<Factura> ObtenerFacturas()
         {
             return dao.Obtener();
+        }
+
+        public List<Marca> ObtenerMarcas()
+        {
+            return dao.ObtenerMarcas();
         }
     }
 }

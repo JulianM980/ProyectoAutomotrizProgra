@@ -1,7 +1,5 @@
 ﻿using Altas.Forms;
-using AutomotrizAplicacion.Datos;
-using AutomotrizAplicacion.Dominio;
-using RecetasSLN.datos;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

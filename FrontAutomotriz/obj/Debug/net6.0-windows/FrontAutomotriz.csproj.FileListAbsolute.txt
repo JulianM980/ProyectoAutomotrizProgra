@@ -5,3 +5,7 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfoInputs.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfo.cs
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmAltaFactura.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ProyectoAutomotriz.FrmIndex.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLogin1.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmMenuPrincipal.resources

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ycfS/8lsxweSeBDWy4UGviTnqL1vEzpCEY8VMTAcanoEbgIU3ac+Y9f6SSex4vDvs3hnTnAEftK448TZz9+/3w==",
+  "dgSpecHash": "PMsA1EHLIIGcooyWuqENC24OOimtKaZ+MYpO+5kO4iLeCXo86zWMKNiniJZuE8qbPaPou1OI94Wuq/MpPv/06w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

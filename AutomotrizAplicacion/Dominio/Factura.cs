@@ -17,8 +17,9 @@ namespace AutomotrizAplicacion.Dominio
             OrdenPedido = new OrdenPedido();
             Plan = new AutoPlan();
             DetallesFactura = new List<DetalleDocumento>();
+            Descuento = 0;
         }
-        public Factura(int idFactura, Cliente cliente, Vendedor vendedor, DateTime fecha, OrdenPedido ordenPedido,AutoPlan plan, List<DetalleDocumento> detallesFactura)
+        public Factura(int idFactura, Cliente cliente, Vendedor vendedor, DateTime fecha, OrdenPedido ordenPedido,AutoPlan plan, List<DetalleDocumento> detallesFactura, double descuento)
         {
             IdFactura = idFactura;
             Cliente = cliente;
@@ -27,6 +28,7 @@ namespace AutomotrizAplicacion.Dominio
             OrdenPedido = ordenPedido;
             Plan = plan;
             DetallesFactura = detallesFactura;
+            Descuento = descuento;
         }
 
         public int IdFactura{ get; set; }
@@ -36,5 +38,12 @@ namespace AutomotrizAplicacion.Dominio
         public OrdenPedido OrdenPedido{ get; set; }
         public AutoPlan Plan { get; set; }
         public List<DetalleDocumento> DetallesFactura { get; set; }
+        public double Descuento { get; set; }
+        public void AgregarDetalle(DetalleDocumento dt) {
+            DetallesFactura.Add(dt);
+        }
+        public void QuitarDetalle(int id) {
+            DetallesFactura.RemoveAt(id);
+        }
     }
 }

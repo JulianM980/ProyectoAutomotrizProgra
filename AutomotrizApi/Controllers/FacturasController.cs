@@ -15,7 +15,7 @@ namespace AutomotrizApi.Controllers
             //inyeccion de dependencias
             dataApi = new DataApiImp();
         }
-        [HttpGet("/productos")]
+        [HttpGet("/facturas")]
         public IActionResult GetFacturas() {
             List<Factura> lst = null;
             try
@@ -27,6 +27,56 @@ namespace AutomotrizApi.Controllers
             {
 
                 return StatusCode(500,"Error interrno. Intente Luego");
+            }
+        }
+        [HttpGet("/productos")]
+
+        public IActionResult GetProductos(string marca) { 
+            List<Producto> lst = null;
+            try
+            {
+                lst = dataApi.ObtenerProductos(marca);
+                return Ok(lst);
+
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+
+            }
+        }
+        [HttpGet("/marcas")]
+
+        public IActionResult GetMarcas()
+        {
+            List<Marca> lst = null;
+            try
+            {
+                lst = dataApi.ObtenerMarcas();
+                return Ok(lst);
+
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+
+            }
+        }
+        public IActionResult PostFactura(Factura f) {
+            try
+            {
+                if (f == null)
+                {
+                    return BadRequest("Datos de presupuesto incorrectos!");
+                }
+
+                return Ok(dataApi.GuardarFacturas(f));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Dominio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace RecetasSLN.datos
         private SqlConnection cnn;
         private HelperDB()
         {
-            cnn = new SqlConnection(@"Data Source=PC-JULIAN-MARTI\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True");
+            cnn = new SqlConnection(@"Data Source=DESKTOP-0A8E6DU\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True");
         }
         public static HelperDB ObtenerInstancia() {
             if (instancia == null) { 
@@ -132,7 +133,52 @@ namespace RecetasSLN.datos
             }
             return resultado;
         }
+        public bool InsertarFactura(string spMaestro,List<Parametro> pMaestro,string pOutput,string spDetalle,Factura f) {
+            bool resultado = true;
+            SqlTransaction t = null;
+            try
+            {
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                SqlCommand cmdMaestro = new SqlCommand(spMaestro, cnn, t);
+                cmdMaestro.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in pMaestro)
+                {
+                    cmdMaestro.Parameters.AddWithValue(p.Nombre, p.Valor);
+                }
+                SqlParameter param = new SqlParameter(pOutput, SqlDbType.Int);
+                param.Direction = ParameterDirection.Output;
+                cmdMaestro.ExecuteNonQuery();
+                int id = Convert.ToInt16(param.Value);
+                foreach (DetalleDocumento dd in f.DetallesFactura)
+                {
+                    
+                    SqlCommand cmdDetalles = new SqlCommand(spDetalle, cnn, t);
+                    cmdDetalles.CommandType = CommandType.StoredProcedure;
+                    cmdDetalles.Parameters.AddWithValue("@nroFactura", id);
+                    cmdDetalles.Parameters.AddWithValue("@precio",dd.PrecioUnitario);
+                    cmdDetalles.Parameters.AddWithValue("@cant",dd.Cantidad);
+                    cmdDetalles.Parameters.AddWithValue("@producto",dd.Producto.IdProducto);
+                    
+                    cmdDetalles.ExecuteNonQuery();
+                }
+                t.Commit();
+            }
+            catch (Exception)
+            {
+
+                if (t != null) resultado = false;
+                t.Rollback();
+            }
+            finally {
+                if (cnn != null && cnn.State == ConnectionState.Open) {
+                    cnn.Close();
+                }
+            }
+
+            return resultado;
         
+        }
         public int Login(string usuario,string pass)
         {
             int aux;

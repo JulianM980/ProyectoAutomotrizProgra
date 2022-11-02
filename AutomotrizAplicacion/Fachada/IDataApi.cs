@@ -10,7 +10,9 @@ namespace AutomotrizAplicacion.Fachada
     public interface IDataApi
     {
         List<Factura> ObtenerFacturas();
-        bool InsertarFacturas(Factura factura);
+        List<Producto> ObtenerProductos(string marca);
+        List<Marca> ObtenerMarcas();
+        bool GuardarFacturas(Factura factura);
         bool ActualizarFactura(Factura factura);
         bool BajaFactura(int idFactura);
     }
