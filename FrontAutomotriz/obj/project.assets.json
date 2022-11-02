@@ -565,11 +565,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
       "projectName": "FrontAutomotriz",
-      "projectPath": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\FrontAutomotriz\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -586,8 +586,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
-              "projectPath": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
+            "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
             }
           }
         }
@@ -630,7 +630,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

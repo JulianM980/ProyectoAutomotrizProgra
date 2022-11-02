@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7O60llAdRFfbwAH2yzmSFx/Xyw6xwivo0KJp5Bp9vZIFcFRmMOjjUelGTwPRZF++8jhfeHOi9uwdaGmI/CerDg==",
+  "dgSpecHash": "PMsA1EHLIIGcooyWuqENC24OOimtKaZ+MYpO+5kO4iLeCXo86zWMKNiniJZuE8qbPaPou1OI94Wuq/MpPv/06w==",
   "success": true,
-  "projectFilePath": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\fontawesome.sharp\\6.1.1\\fontawesome.sharp.6.1.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
