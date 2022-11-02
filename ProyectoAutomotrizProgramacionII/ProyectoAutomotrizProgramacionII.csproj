@@ -47,6 +47,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client\ClientSingleton.cs" />
+    <Compile Include="Forms\FrmAltacOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAltacOrden.Designer.cs">
+      <DependentUpon>FrmAltacOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAltaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAltaFactura.Designer.cs">
+      <DependentUpon>FrmAltaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNuevaOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNuevaOrden.Designer.cs">
+      <DependentUpon>FrmNuevaOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmNuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNuevoCliente.Designer.cs">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentación\FrmAltaFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +91,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmAltacOrden.resx">
+      <DependentUpon>FrmAltacOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAltaFactura.resx">
+      <DependentUpon>FrmAltaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNuevaOrden.resx">
+      <DependentUpon>FrmNuevaOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNuevoCliente.resx">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentación\FrmAltaFactura.resx">
       <DependentUpon>FrmAltaFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,5 +134,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
