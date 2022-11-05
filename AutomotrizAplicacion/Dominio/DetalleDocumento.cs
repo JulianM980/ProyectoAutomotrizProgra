@@ -10,20 +10,21 @@ namespace AutomotrizAplicacion.Dominio
     {
         public DetalleDocumento()
         {
-            PrecioUnitario = 0;
             Cantidad = 0;
             Producto = new Producto();
 
         }
-        public DetalleDocumento( double precioUnitario, int cantidad, Producto producto)
+        public DetalleDocumento(  int cantidad, Producto producto)
         {
-            PrecioUnitario = precioUnitario;
             Cantidad = cantidad;
             Producto = producto;
         }
 
-        public double PrecioUnitario { get; set; }
         public int Cantidad { get; set; }
         public Producto Producto { get; set; }
+        public double CalcularSubTotal()
+        {
+            return Producto.Precio * Cantidad;
+        }
     }
 }

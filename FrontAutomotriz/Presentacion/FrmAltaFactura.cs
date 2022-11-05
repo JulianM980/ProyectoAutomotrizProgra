@@ -1,5 +1,7 @@
 ﻿using Altas.Forms;
 using AutomotrizAplicacion.Dominio;
+using FrontAutomotriz.Client;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,8 +27,8 @@ namespace Altas
         private void FrmAltaFactura_Load(object sender, EventArgs e)
         {
             CargarCliente();
-            CargarVendedor();
-            CargarAutoPlan();
+            //CargarVendedor();
+            //CargarAutoPlan();
             CargarMarcas();
             dtpFecha.Value = DateTime.Now;
             cboCliente.SelectedIndex = -1;
@@ -42,38 +44,54 @@ namespace Altas
                 this.Close();
         }
 
-        private void CargarCliente()
+        private async void CargarCliente()
         {
-            cboCliente.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_CLIENTES");
-            cboCliente.DisplayMember = "cliente";
-            cboCliente.ValueMember = "idCliente";
+            string url = "http://localhost:5197/clientes";
+
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+
+            var lst = JsonConvert.DeserializeObject<List<Cliente>>(result);
+            cboCliente.DataSource = lst;
+            cboCliente.DisplayMember = "Apellido";
+            cboCliente.ValueMember = "IdCliente";
         }
-        private void CargarVendedor()
+        //private void CargarVendedor()
+        //{
+        //    cboVendedor.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_VENDEDOR");
+        //    cboVendedor.DisplayMember = "vendedor";
+        //    cboVendedor.ValueMember = "idVendedor";
+        //}
+        //private void CargarAutoPlan()
+        //{
+        //    cboAutoPlan.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_AUTOPLAN");
+        //    cboAutoPlan.DisplayMember = "CantidadCuotas";
+        //    cboAutoPlan.ValueMember = "idAutoPlan";
+        //}
+        private async void CargarMarcas()
         {
-            cboVendedor.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_VENDEDOR");
-            cboVendedor.DisplayMember = "vendedor";
-            cboVendedor.ValueMember = "idVendedor";
-        }
-        private void CargarAutoPlan()
-        {
-            cboAutoPlan.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_AUTOPLAN");
-            cboAutoPlan.DisplayMember = "CantidadCuotas";
-            cboAutoPlan.ValueMember = "idAutoPlan";
-        }
-        private void CargarMarcas()
-        {
-            cboMarca.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_MARCAS");
-            cboMarca.DisplayMember = "nombre";
-            cboMarca.ValueMember = "idMarca";
+            string url = "http://localhost:5197/marcas";
+
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+            
+            var lst = JsonConvert.DeserializeObject<List<Marca>>(result);
+           
+            cboMarca.DataSource = lst;
+            cboMarca.DisplayMember = "Nombre";
+            cboMarca.ValueMember = "IdMarca";
         }
 
-        private void btnCargar_Click(object sender, EventArgs e)
+        private async void btnCargar_Click(object sender, EventArgs e)
         {
-            List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@marca", cboMarca.Text));
-            cboProducto.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_PRODUCTO", lst);
-            cboProducto.DisplayMember = "nombre";
-            cboProducto.ValueMember = "idProducto";
+            string marca = cboMarca.Text;
+            string url = $"http://localhost:5197/productos/{marca}";
+
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+
+            var lst = JsonConvert.DeserializeObject<List<Producto>>(result);
+
+            cboProducto.DataSource = lst;
+            cboProducto.DisplayMember = "Nombre";
+            cboProducto.ValueMember = "IdProducto";
             cboProducto.SelectedIndex = -1;
         }
 
@@ -105,9 +123,9 @@ namespace Altas
             Producto oProducto = (Producto)cboProducto.SelectedItem;//no se como hacer para que muestre el valor seleccionado 
             int cantidad = Convert.ToInt32(txtCantidad.Text);
 
-            DetalleDocumento detalle = new DetalleDocumento( oProducto.Precio,cantidad,oProducto);
+            DetalleDocumento detalle = new DetalleDocumento( cantidad,oProducto);
             oFactura.AgregarDetalle(detalle);
-            dgvDetalle.Rows.Add(new object[] {oProducto.IdProducto, oProducto.Nombre, txtCantidad.Text, oProducto.PreUni });
+            dgvDetalle.Rows.Add(new object[] {oProducto.IdProducto, oProducto.Nombre, txtCantidad.Text, oProducto.Precio });
 
             CalcularTotal();
         }
@@ -174,7 +192,7 @@ namespace Altas
 
         private void btnNCliente_Click(object sender, EventArgs e)
         {
-            //new FrmNuevoCliente().ShowDialog();
+            new FrmNuevoCliente().ShowDialog();
         }
 
         private void btnNOrden_Click(object sender, EventArgs e)

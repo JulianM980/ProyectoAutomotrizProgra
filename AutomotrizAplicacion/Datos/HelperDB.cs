@@ -156,7 +156,7 @@ namespace RecetasSLN.datos
                     SqlCommand cmdDetalles = new SqlCommand(spDetalle, cnn, t);
                     cmdDetalles.CommandType = CommandType.StoredProcedure;
                     cmdDetalles.Parameters.AddWithValue("@nroFactura", id);
-                    cmdDetalles.Parameters.AddWithValue("@precio",dd.PrecioUnitario);
+                    cmdDetalles.Parameters.AddWithValue("@precio",dd.Producto.Precio);
                     cmdDetalles.Parameters.AddWithValue("@cant",dd.Cantidad);
                     cmdDetalles.Parameters.AddWithValue("@producto",dd.Producto.IdProducto);
                     
@@ -179,39 +179,42 @@ namespace RecetasSLN.datos
             return resultado;
         
         }
-        public int Login(string usuario,string pass)
+        public bool Login(string usuario,string pass,string sp)
         {
-            int aux;
+            bool aux = true;
             try
             {
                 cnn.Open();
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cnn;
-                cmd.CommandText = "Sp_Login";
+                SqlCommand cmd = new SqlCommand(sp,cnn);
+                
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@user", usuario);
                 cmd.Parameters.AddWithValue("@pass", pass);
+                SqlParameter param = new SqlParameter("@cant",SqlDbType.Int);
+                param.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(param);
+                cmd.ExecuteNonQuery();
 
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
+                int cantidad = Convert.ToInt32(param.Value);
+                if (cantidad != 1) aux = false;
+                //if (dr.Read() && dr.HasRows) { 
 
-                     aux=dr.GetInt32(0);
-                    return aux;
-                }
+                //    if (dr.GetInt32(0) != 1) aux = false;
+                //}
+                //dr.Close();
+
             }
             catch(Exception e)
             {
-                MessageBox.Show(e.Message);
+                aux = false;
             }
-
             finally
             {
                 cnn.Close();
             }
 
-            return aux=-1;
+            return aux;
         }
 
     }

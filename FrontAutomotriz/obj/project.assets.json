@@ -184,6 +184,15 @@
         "runtime": {
           "bin/placeholder/AutomotrizAplicacion.dll": {}
         }
+      },
+      "Reportes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Reportes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reportes.dll": {}
+        }
       }
     }
   },
@@ -550,13 +559,19 @@
       "type": "project",
       "path": "../AutomotrizAplicacion/AutomotrizAplicacion.csproj",
       "msbuildProject": "../AutomotrizAplicacion/AutomotrizAplicacion.csproj"
+    },
+    "Reportes/1.0.0": {
+      "type": "project",
+      "path": "../Reportes/Reportes.csproj",
+      "msbuildProject": "../Reportes/Reportes.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "AutomotrizAplicacion >= 1.0.0",
       "FontAwesome.Sharp >= 6.1.1",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "Reportes >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -588,6 +603,9 @@
           "projectReferences": {
             "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
               "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
+            },
+            "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj"
             }
           }
         }

@@ -33,6 +33,7 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -49,6 +50,7 @@
             this.btnLogin.TabIndex = 9;
             this.btnLogin.Text = "Iniciar sesion";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblContraseña
             // 
@@ -65,10 +67,11 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtContraseña.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtContraseña.Location = new System.Drawing.Point(55, 161);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(117, 92, 117, 92);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(233, 23);
             this.txtContraseña.TabIndex = 7;
             // 
@@ -87,12 +90,24 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUsuario.Location = new System.Drawing.Point(55, 92);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(117, 92, 117, 92);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(233, 23);
             this.txtUsuario.TabIndex = 5;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(58, 271);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(41, 15);
+            this.lblError.TabIndex = 10;
+            this.lblError.Text = "label1";
+            this.lblError.Visible = false;
             // 
             // FrmLogin1
             // 
@@ -100,6 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(349, 336);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.txtContraseña);
@@ -119,5 +135,6 @@
         private TextBox txtContraseña;
         private Label lblUsuario;
         private TextBox txtUsuario;
+        private Label lblError;
     }
 }

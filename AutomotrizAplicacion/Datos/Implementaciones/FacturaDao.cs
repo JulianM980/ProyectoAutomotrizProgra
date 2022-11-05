@@ -61,8 +61,9 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
 
         public List<Marca> ObtenerMarcas()
         {
-            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("SP_MARCAS");
             List<Marca> lst = new List<Marca>();
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("SP_MARCAS");
+            if (dt == null) return lst;
             foreach (DataRow row in dt.Rows) { 
                 Marca m = new Marca();
                 m.IdMarca = Convert.ToInt16(row["idMarca"]);
@@ -87,6 +88,11 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
                 prod.Add(p);
             }
             return prod;
+        }
+
+        public List<Vendedor> ObtenerVendedores()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -45,5 +45,22 @@ namespace AutomotrizAplicacion.Dominio
         public void QuitarDetalle(int id) {
             DetallesFactura.RemoveAt(id);
         }
+        public double CalcularTotal()
+        {
+            double total = 0;
+            foreach (DetalleDocumento item in DetallesFactura)
+                total += item.CalcularSubTotal();
+            return total;
+        }
+
+        public double CalcularTotalConDescuento()
+        {
+            double final = this.CalcularTotal();
+            if (Descuento > 0)
+            {
+                final -= final * Descuento / 100;
+            }
+            return final;
+        }
     }
 }

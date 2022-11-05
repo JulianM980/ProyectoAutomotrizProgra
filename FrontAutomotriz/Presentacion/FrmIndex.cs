@@ -1,4 +1,6 @@
 ﻿using Altas;
+using Altas.Consultar;
+using FrontAutomotriz.Presentacion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +35,23 @@ namespace ProyectoAutomotriz
             nuevoFormulario.BringToFront();
             nuevoFormulario.Show();
         }
-       
+        private void Paneles() {
+            pTransacciones.Visible = false;
+            pReportes.Visible = false;
+        }
+        private void EsconderSubMenu() { 
+            if(pTransacciones.Visible == true) pTransacciones.Visible = false;
+            if(pReportes.Visible == true) pReportes.Visible = false;
+        }
+        private void MostrarSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                EsconderSubMenu();
+                subMenu.Visible = true;
+            }
+            else subMenu.Visible = false;
+        }
         #endregion
         #region EVENTOS
         private void FrmIndex_Load(object sender, EventArgs e)
@@ -44,10 +62,12 @@ namespace ProyectoAutomotriz
             this.iconPictureBox1.Parent = pictureBox1;
             this.iconPictureBox2.Parent = pictureBox1;
             this.lblDescripcion.Parent = pictureBox1;
+
+            Paneles();
         }
         private void Consulta1_Click(object sender, EventArgs e)
         {
-            //AbrirFormulario(new FrmConsultaFacturas());
+            AbrirFormulario(new FrmConsultar());
         }
         private void Consulta2_Click(object sender, EventArgs e)
         {
@@ -62,7 +82,7 @@ namespace ProyectoAutomotriz
 
         private void Consulta4_Click(object sender, EventArgs e)
         {
-           // AbrirFormulario(new FrmConsulta4());
+           AbrirFormulario(new Reportes.FrmReporte());
 
         }
 
@@ -85,6 +105,49 @@ namespace ProyectoAutomotriz
         private void iconPictureBox1_Click_1(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
+
+        }
+
+      
+
+        private void btnConsultarFacturas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultar());
+            EsconderSubMenu();
+        }
+
+        private void btnIngresarFacturas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmAltaFactura());
+            EsconderSubMenu();
+
+        }
+
+        private void btnSoporte_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsultaCliente());
+        }
+
+        private void btnTransDesplegable_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(pTransacciones);
+        }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+            EsconderSubMenu();
+
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            EsconderSubMenu();
+
+        }
+
+        private void btnRepDesplegable_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(pReportes);
 
         }
     }

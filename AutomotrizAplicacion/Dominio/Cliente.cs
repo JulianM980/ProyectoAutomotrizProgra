@@ -8,16 +8,16 @@ namespace AutomotrizAplicacion.Dominio
 {
     public class Cliente: Persona
     {
-        public Cliente(int id, string nombre, string apellido, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc,int idCliente, int tipoCliente, bool estado)
-            :base(id,nombre,apellido,dni,nroTel,email,calle,altura,codPostal,tipoDoc)
+        public Cliente(int id, string nombre, string apellido, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc, int idCliente, int tipoCliente, bool estado)
+            : base(id, nombre, apellido, dni, nroTel, email, calle, altura, codPostal, tipoDoc)
         {
             IdCliente = idCliente;
             TipoCliente = tipoCliente;
             Estado = estado;
         }
-        public Cliente():base()
+        public Cliente() : base()
         {
-            IdCliente = -1 ;
+            IdCliente = -1;
             TipoCliente = -1;
             Estado = false;
         }

@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AutomotrizAplicacion\AutomotrizAplicacion.csproj" />
+    <ProjectReference Include="..\Reportes\Reportes.csproj" />
   </ItemGroup>
 
   <ItemGroup>

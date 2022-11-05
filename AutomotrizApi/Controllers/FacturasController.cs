@@ -29,7 +29,22 @@ namespace AutomotrizApi.Controllers
                 return StatusCode(500,"Error interrno. Intente Luego");
             }
         }
-        [HttpGet("/productos")]
+        [HttpGet("/facturas/{anio}")]
+        public IActionResult GetFacturasPorAnio()
+        {
+            List<Factura> lst = null;
+            try
+            {
+                lst = dataApi.ObtenerFacturas();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+            }
+        }
+        [HttpGet("/productos/{marca}")]
 
         public IActionResult GetProductos(string marca) { 
             List<Producto> lst = null;
@@ -64,6 +79,7 @@ namespace AutomotrizApi.Controllers
 
             }
         }
+        [HttpPost("/facturas")]
         public IActionResult PostFactura(Factura f) {
             try
             {
