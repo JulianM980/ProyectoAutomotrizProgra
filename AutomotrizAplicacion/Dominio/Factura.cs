@@ -42,6 +42,12 @@ namespace AutomotrizAplicacion.Dominio
         public void AgregarDetalle(DetalleDocumento dt) {
             DetallesFactura.Add(dt);
         }
+
+        public double CalcularTotal()
+        {
+            throw new NotImplementedException();
+        }
+
         public void QuitarDetalle(int id) {
             DetallesFactura.RemoveAt(id);
         }
