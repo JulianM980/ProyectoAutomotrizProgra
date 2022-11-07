@@ -15,7 +15,7 @@ namespace AutomotrizApi.Controllers
         }
         [HttpGet("/credenciales/{user}/{pass}")]
         public IActionResult GetCredenciales(string user,string pass) {
-            bool aux = true;
+            bool aux;
             try
             {
                 aux = dataUsuarios.ComprobarCredenciales(user, pass);

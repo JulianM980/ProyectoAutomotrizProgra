@@ -10,6 +10,10 @@ namespace AutomotrizAplicacion.Datos.Interfaces
     public  interface IClientesDao
     {
         List<Cliente> Obtener();
+        Cliente ObtenerUno(int id);
+        List<TipoCliente> ObtenerTiposClientes();
+        List<TipoDoc> ObtenerTiposDoc();
+
         bool Insertar(Cliente cliente);
         bool Actualizar(Cliente cliente);
         bool BajaLogica(int idCliente);

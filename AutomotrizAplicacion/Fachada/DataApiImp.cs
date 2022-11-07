@@ -46,5 +46,20 @@ namespace AutomotrizAplicacion.Fachada
         {
             return dao.ObtenerMarcas();
         }
+
+        public List<Vendedor> ObtenerVendedores()
+        {
+            return dao.ObtenerVendedores();
+        }
+
+        public List<Factura> ObtenerAlgunas(int anio)
+        {
+            return dao.ObtenerAlgunas(anio);
+        }
+
+        public Factura ObtenerUna(int id)
+        {
+            return dao.ObtenerUna(id);
+        }
     }
 }

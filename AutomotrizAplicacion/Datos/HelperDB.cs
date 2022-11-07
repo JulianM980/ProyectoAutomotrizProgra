@@ -133,6 +133,39 @@ namespace RecetasSLN.datos
             }
             return resultado;
         }
+        public bool Ejecutar(string sp, List<Parametro> param)
+        {
+            bool resultado = true;
+            try
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand(sp, cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (param != null)
+                {
+                    foreach (Parametro p in param)
+                    {
+                        cmd.Parameters.AddWithValue(p.Nombre, p.Valor);
+                    }
+                }
+                int aux = cmd.ExecuteNonQuery();
+                if (aux < 0) resultado = false;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error en base de datos");
+                resultado = false;
+            }
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                {
+                    cnn.Close();
+                }
+            }
+            return resultado;
+        }
         public bool InsertarFactura(string spMaestro,List<Parametro> pMaestro,string pOutput,string spDetalle,Factura f) {
             bool resultado = true;
             SqlTransaction t = null;
@@ -148,6 +181,7 @@ namespace RecetasSLN.datos
                 }
                 SqlParameter param = new SqlParameter(pOutput, SqlDbType.Int);
                 param.Direction = ParameterDirection.Output;
+                cmdMaestro.Parameters.Add(param);
                 cmdMaestro.ExecuteNonQuery();
                 int id = Convert.ToInt16(param.Value);
                 foreach (DetalleDocumento dd in f.DetallesFactura)
@@ -178,6 +212,78 @@ namespace RecetasSLN.datos
 
             return resultado;
         
+        }
+        public bool InsertarCliente(string spMaestro, List<Parametro> pMaestro, string pOutput, string spDetalle, Cliente cliente)
+        {
+            bool resultado = true;
+            SqlTransaction t = null;
+            try
+            {
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                SqlCommand cmdMaestro = new SqlCommand(spMaestro, cnn, t);
+                cmdMaestro.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in pMaestro)
+                {
+                    if(p.Valor == null) cmdMaestro.Parameters.AddWithValue(p.Nombre, DBNull.Value);
+                    else cmdMaestro.Parameters.AddWithValue(p.Nombre, p.Valor);
+                }
+                SqlParameter param = new SqlParameter(pOutput, SqlDbType.Int);
+                param.Direction = ParameterDirection.Output;
+                cmdMaestro.Parameters.Add(param);
+                cmdMaestro.ExecuteNonQuery();
+                int id = Convert.ToInt16(param.Value);
+
+                SqlCommand cmdDetalles = new SqlCommand(spDetalle, cnn, t);
+                cmdDetalles.CommandType = CommandType.StoredProcedure;
+                cmdDetalles.Parameters.AddWithValue("@idDatos", id);
+                cmdDetalles.Parameters.AddWithValue("@tipo", cliente.TipoCliente.Id);
+
+                cmdDetalles.ExecuteNonQuery();
+                
+                t.Commit();
+            }
+            catch (Exception)
+            {
+
+                if (t != null) resultado = false;
+                t.Rollback();
+            }
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                {
+                    cnn.Close();
+                }
+            }
+
+            return resultado;
+
+        }
+        public bool BajaLogica(string sp, List<Parametro> lst) {
+            bool aux;
+            try
+            {
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand(sp,cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in lst) {
+                    cmd.Parameters.AddWithValue(p.Nombre,p.Valor);
+                }
+                int n = cmd.ExecuteNonQuery();
+                if(n == 1) aux = true;
+                else aux = false;
+            }
+            catch (Exception e)
+            {
+                aux = false;
+            }
+            finally
+            {
+                cnn.Close();
+            }
+
+            return aux;
         }
         public bool Login(string usuario,string pass,string sp)
         {

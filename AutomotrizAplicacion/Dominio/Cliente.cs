@@ -8,8 +8,8 @@ namespace AutomotrizAplicacion.Dominio
 {
     public class Cliente: Persona
     {
-        public Cliente(int id, string nombre, string apellido, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc, int idCliente, int tipoCliente, bool estado)
-            : base(id, nombre, apellido, dni, nroTel, email, calle, altura, codPostal, tipoDoc)
+        public Cliente(int id, string nombreC, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc,string apellido,string nombre, int idCliente, TipoCliente tipoCliente, bool estado)
+            : base(id, nombreC, dni, nroTel, email, calle, altura, codPostal, tipoDoc,apellido,nombre)
         {
             IdCliente = idCliente;
             TipoCliente = tipoCliente;
@@ -18,11 +18,12 @@ namespace AutomotrizAplicacion.Dominio
         public Cliente() : base()
         {
             IdCliente = -1;
-            TipoCliente = -1;
+            TipoCliente = new TipoCliente();
             Estado = false;
         }
+
         public int IdCliente { get; set; }
-        public int TipoCliente { get; set; }
+        public TipoCliente TipoCliente { get; set; }
         public bool Estado { get; set; }
     }
 }

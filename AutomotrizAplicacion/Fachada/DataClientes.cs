@@ -19,12 +19,12 @@ namespace AutomotrizAplicacion.Fachada
         }
         public bool ActualizarCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            return dao.Actualizar(cliente);
         }
 
         public bool BajaLogicaCliente(int idCliente)
         {
-            throw new NotImplementedException();
+            return dao.BajaLogica(idCliente);
         }
 
         public bool ComprobarCredenciales(string user, string pass)
@@ -34,12 +34,27 @@ namespace AutomotrizAplicacion.Fachada
 
         public bool InsertarCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            return dao.Insertar(cliente);
         }
 
         public List<Cliente> ObtenerClientes()
         {
             return dao.Obtener();
+        }
+
+        public List<TipoCliente> ObtenerTiposClientes()
+        {
+            return dao.ObtenerTiposClientes();
+        }
+
+        public List<TipoDoc> ObtenerTiposDoc()
+        {
+            return dao.ObtenerTiposDoc();
+        }
+
+        public Cliente ObtenerUno(int id)
+        {
+            return dao.ObtenerUno(id);
         }
     }
 }

@@ -38,10 +38,14 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.cboProducto = new System.Windows.Forms.ComboBox();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
+            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboAutoPlan = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnNCliente = new System.Windows.Forms.Button();
@@ -54,11 +58,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.rbPlan1 = new System.Windows.Forms.RadioButton();
+            this.rbPlan2 = new System.Windows.Forms.RadioButton();
+            this.rbPlan3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,6 +110,7 @@
             // 
             // txtTotal
             // 
+            this.txtTotal.Enabled = false;
             this.txtTotal.Location = new System.Drawing.Point(658, 529);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTotal.Name = "txtTotal";
@@ -116,6 +119,7 @@
             // 
             // txtSubTotal
             // 
+            this.txtSubTotal.Enabled = false;
             this.txtSubTotal.Location = new System.Drawing.Point(658, 498);
             this.txtSubTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSubTotal.Name = "txtSubTotal";
@@ -143,6 +147,7 @@
             // 
             // cboProducto
             // 
+            this.cboProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboProducto.FormattingEnabled = true;
             this.cboProducto.Location = new System.Drawing.Point(132, 234);
             this.cboProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -167,6 +172,42 @@
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.Size = new System.Drawing.Size(752, 173);
             this.dgvDetalle.TabIndex = 43;
+            this.dgvDetalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalle_CellContentClick);
+            // 
+            // ColId
+            // 
+            this.ColId.HeaderText = "Id";
+            this.ColId.Name = "ColId";
+            this.ColId.ReadOnly = true;
+            this.ColId.Visible = false;
+            // 
+            // ColProducto
+            // 
+            this.ColProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColProducto.HeaderText = "Producto";
+            this.ColProducto.Name = "ColProducto";
+            this.ColProducto.ReadOnly = true;
+            // 
+            // ColCantidad
+            // 
+            this.ColCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColCantidad.HeaderText = "Cantidad";
+            this.ColCantidad.Name = "ColCantidad";
+            this.ColCantidad.ReadOnly = true;
+            // 
+            // ColPrecioUnitario
+            // 
+            this.ColPrecioUnitario.HeaderText = "Precio Unitario";
+            this.ColPrecioUnitario.Name = "ColPrecioUnitario";
+            this.ColPrecioUnitario.ReadOnly = true;
+            // 
+            // ColAcciones
+            // 
+            this.ColAcciones.HeaderText = "Acciones";
+            this.ColAcciones.Name = "ColAcciones";
+            this.ColAcciones.ReadOnly = true;
+            this.ColAcciones.Text = "Quitar";
+            this.ColAcciones.UseColumnTextForButtonValue = true;
             // 
             // label7
             // 
@@ -196,15 +237,6 @@
             this.label6.TabIndex = 40;
             this.label6.Text = "AutoPlan";
             // 
-            // cboAutoPlan
-            // 
-            this.cboAutoPlan.FormattingEnabled = true;
-            this.cboAutoPlan.Location = new System.Drawing.Point(142, 133);
-            this.cboAutoPlan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cboAutoPlan.Name = "cboAutoPlan";
-            this.cboAutoPlan.Size = new System.Drawing.Size(234, 23);
-            this.cboAutoPlan.TabIndex = 39;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -217,6 +249,7 @@
             // 
             // dtpFecha
             // 
+            this.dtpFecha.Enabled = false;
             this.dtpFecha.Location = new System.Drawing.Point(340, 14);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFecha.Name = "dtpFecha";
@@ -285,6 +318,7 @@
             // 
             // cboMarca
             // 
+            this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarca.FormattingEnabled = true;
             this.cboMarca.Location = new System.Drawing.Point(132, 200);
             this.cboMarca.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -325,45 +359,47 @@
             this.label5.Text = "Producto";
             this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
-            // ColId
+            // rbPlan1
             // 
-            this.ColId.HeaderText = "Id";
-            this.ColId.Name = "ColId";
-            this.ColId.ReadOnly = true;
-            this.ColId.Visible = false;
+            this.rbPlan1.AutoSize = true;
+            this.rbPlan1.Location = new System.Drawing.Point(142, 132);
+            this.rbPlan1.Name = "rbPlan1";
+            this.rbPlan1.Size = new System.Drawing.Size(148, 19);
+            this.rbPlan1.TabIndex = 56;
+            this.rbPlan1.TabStop = true;
+            this.rbPlan1.Text = "36 Cuotas - 23% interes";
+            this.rbPlan1.UseVisualStyleBackColor = true;
             // 
-            // ColProducto
+            // rbPlan2
             // 
-            this.ColProducto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColProducto.HeaderText = "Producto";
-            this.ColProducto.Name = "ColProducto";
-            this.ColProducto.ReadOnly = true;
+            this.rbPlan2.AutoSize = true;
+            this.rbPlan2.Location = new System.Drawing.Point(296, 131);
+            this.rbPlan2.Name = "rbPlan2";
+            this.rbPlan2.Size = new System.Drawing.Size(148, 19);
+            this.rbPlan2.TabIndex = 56;
+            this.rbPlan2.TabStop = true;
+            this.rbPlan2.Text = "84 Cuotas - 30% Interes";
+            this.rbPlan2.UseVisualStyleBackColor = true;
             // 
-            // ColCantidad
+            // rbPlan3
             // 
-            this.ColCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColCantidad.HeaderText = "Cantidad";
-            this.ColCantidad.Name = "ColCantidad";
-            this.ColCantidad.ReadOnly = true;
-            // 
-            // ColPrecioUnitario
-            // 
-            this.ColPrecioUnitario.HeaderText = "Precio Unitario";
-            this.ColPrecioUnitario.Name = "ColPrecioUnitario";
-            this.ColPrecioUnitario.ReadOnly = true;
-            // 
-            // ColAcciones
-            // 
-            this.ColAcciones.HeaderText = "Acciones";
-            this.ColAcciones.Name = "ColAcciones";
-            this.ColAcciones.ReadOnly = true;
-            this.ColAcciones.Text = "Quitar";
+            this.rbPlan3.AutoSize = true;
+            this.rbPlan3.Location = new System.Drawing.Point(450, 131);
+            this.rbPlan3.Name = "rbPlan3";
+            this.rbPlan3.Size = new System.Drawing.Size(156, 19);
+            this.rbPlan3.TabIndex = 56;
+            this.rbPlan3.TabStop = true;
+            this.rbPlan3.Text = "120 Cuotas - 34% Cuotas";
+            this.rbPlan3.UseVisualStyleBackColor = true;
             // 
             // FrmAltaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 654);
+            this.Controls.Add(this.rbPlan3);
+            this.Controls.Add(this.rbPlan2);
+            this.Controls.Add(this.rbPlan1);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
@@ -381,7 +417,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDescuento);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cboAutoPlan);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnNCliente);
@@ -416,7 +451,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboAutoPlan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnNCliente;
@@ -428,12 +462,15 @@
         private System.Windows.Forms.ComboBox cboMarca;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCargar;
+        private Label label5;
         private DataGridViewTextBoxColumn ColId;
         private DataGridViewTextBoxColumn ColProducto;
         private DataGridViewTextBoxColumn ColCantidad;
         private DataGridViewTextBoxColumn ColPrecioUnitario;
         private DataGridViewButtonColumn ColAcciones;
-        private Label label5;
+        private RadioButton rbPlan1;
+        private RadioButton rbPlan2;
+        private RadioButton rbPlan3;
     }
 }
 

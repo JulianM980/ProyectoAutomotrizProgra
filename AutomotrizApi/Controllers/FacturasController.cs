@@ -26,16 +26,16 @@ namespace AutomotrizApi.Controllers
             catch (Exception)
             {
 
-                return StatusCode(500,"Error interrno. Intente Luego");
+                return StatusCode(500, "Error interrno. Intente Luego");
             }
         }
         [HttpGet("/facturas/{anio}")]
-        public IActionResult GetFacturasPorAnio()
+        public IActionResult GetFacturasPorAnio(int anio)
         {
             List<Factura> lst = null;
             try
             {
-                lst = dataApi.ObtenerFacturas();
+                lst = dataApi.ObtenerAlgunas(anio);
                 return Ok(lst);
             }
             catch (Exception)
@@ -44,9 +44,26 @@ namespace AutomotrizApi.Controllers
                 return StatusCode(500, "Error interrno. Intente Luego");
             }
         }
+        [HttpGet("/factura/{id}")]
+        public IActionResult GetFactura(int id)
+        {
+            Factura factura = null; 
+            try
+            {
+                factura = dataApi.ObtenerUna(id);
+                return Ok(factura);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+            }
+        }
+
+
         [HttpGet("/productos/{marca}")]
 
-        public IActionResult GetProductos(string marca) { 
+        public IActionResult GetProductos(string marca) {
             List<Producto> lst = null;
             try
             {
@@ -79,13 +96,29 @@ namespace AutomotrizApi.Controllers
 
             }
         }
+        [HttpGet("/vendedores")]
+        public IActionResult GetVendedores() {
+            List<Vendedor> lst = null;
+            try
+            {
+                lst = dataApi.ObtenerVendedores();
+                return Ok(lst);
+
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+
+            }
+        }
         [HttpPost("/facturas")]
         public IActionResult PostFactura(Factura f) {
             try
             {
                 if (f == null)
                 {
-                    return BadRequest("Datos de presupuesto incorrectos!");
+                    return BadRequest("Los datos de la factura son incorrectos");
                 }
 
                 return Ok(dataApi.GuardarFacturas(f));

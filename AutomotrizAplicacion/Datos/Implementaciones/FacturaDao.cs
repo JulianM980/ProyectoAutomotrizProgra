@@ -46,8 +46,7 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
             foreach (DataRow row in dt.Rows) { 
                 Factura factura = new Factura();
                 factura.IdFactura = Convert.ToInt16(row["idFactura"]);
-                factura.Cliente.Apellido = row["apellido"].ToString();
-                factura.Cliente.Nombre = row["nombre"].ToString();
+                factura.Cliente.NombreCompleto = row["nombre_completo"].ToString();
                 factura.Fecha = Convert.ToDateTime(row["fecha"]);
 
                 facturas.Add(factura);
@@ -55,9 +54,23 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
             return facturas;
         }
 
-      
+        public List<Factura> ObtenerAlgunas(int anio)
+        {
+            List<Factura> facturas = new List<Factura>();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@anio",anio));
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("obt_facturas_anio",lst);
+            foreach (DataRow row in dt.Rows)
+            {
+                Factura factura = new Factura();
+                factura.IdFactura = Convert.ToInt16(row["idFactura"]);
+                factura.Cliente.NombreCompleto = row["nombre_completo"].ToString();
+                factura.Fecha = Convert.ToDateTime(row["fecha"]);
 
-        
+                facturas.Add(factura);
+            }
+            return facturas;
+        }
 
         public List<Marca> ObtenerMarcas()
         {
@@ -90,9 +103,62 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
             return prod;
         }
 
+        public Factura ObtenerUna(int id)
+        {
+            Factura factura = new Factura();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@id", id));
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("obt_factura", lst);
+            bool primero = true;
+            foreach (DataRow row in dt.Rows)
+            {
+                if (primero) { 
+                    factura.IdFactura = Convert.ToInt16(row["idFactura"]);
+                    factura.Cliente.IdCliente = Convert.ToInt16(row["idCliente"]);
+                    factura.Cliente.NombreCompleto = row["nombre_completo"].ToString();
+                    factura.Vendedor.IdVendedor = Convert.ToInt16(row["idVendedor"]);
+                    factura.Vendedor.NombreCompleto = row["nombre_completo_v"].ToString();
+                    if (row["idOrdenPedido"] == DBNull.Value) factura.OrdenPedido.IdOrdenPedido = 0;
+                    else factura.OrdenPedido.IdOrdenPedido = Convert.ToInt16(row["idOrdenPedido"]);
+                    if (row["idAutoPlan"] == DBNull.Value) factura.Plan.IdAutoPlan = 0;
+                    else factura.Plan.IdAutoPlan = Convert.ToInt16(row["idAutoPlan"]);
+                    factura.Fecha = Convert.ToDateTime(row["fecha"]);
+                    factura.Descuento = Convert.ToDouble(row["descuento"]);
+                    primero = false;
+                }
+                DetalleDocumento df = new DetalleDocumento();
+                df.Cantidad = Convert.ToInt32(row["cantidad"]);
+                df.Producto.IdProducto = Convert.ToInt32(row["idProducto"]);
+                df.Producto.Precio = Convert.ToInt32(row["preunitario"]);
+                df.Producto.Nombre = row["nom_producto"].ToString();
+                factura.AgregarDetalle(df);
+
+               
+            }
+            return factura;
+        }
+
         public List<Vendedor> ObtenerVendedores()
         {
-            throw new NotImplementedException();
+            List<Vendedor> vendedores = new List<Vendedor>();
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("OBT_VENDEDORES");
+            if (dt == null) return vendedores;
+            foreach (DataRow row in dt.Rows)
+            {
+                Vendedor vendedor = new Vendedor();
+                vendedor.IdVendedor = Convert.ToInt16(row["idVendedor"]);
+                vendedor.NombreCompleto = row["nombre_completo"].ToString();
+                vendedor.Dni = row["documento"].ToString();
+                vendedor.NroTel = row["nroTel"].ToString();
+                vendedor.Email = row["email"].ToString();
+                vendedor.Calle = row["calle"].ToString();
+                vendedor.Altura = Convert.ToInt32(row["altura"]);
+                vendedor.CodPostal = Convert.ToInt32(row["codPostal"]);
+                vendedor.TipoDoc = Convert.ToInt32(row["idTipoDoc"]);
+
+                vendedores.Add(vendedor);
+            }
+            return vendedores;
         }
     }
 }

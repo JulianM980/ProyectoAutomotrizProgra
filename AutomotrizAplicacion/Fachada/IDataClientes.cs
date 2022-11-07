@@ -10,6 +10,10 @@ namespace AutomotrizAplicacion.Fachada
     public interface IDataClientes
     {
         List<Cliente> ObtenerClientes();
+        Cliente ObtenerUno(int id);
+
+        List<TipoCliente> ObtenerTiposClientes();
+        List<TipoDoc> ObtenerTiposDoc();
 
         bool InsertarCliente(Cliente cliente);
         bool ActualizarCliente(Cliente cliente);

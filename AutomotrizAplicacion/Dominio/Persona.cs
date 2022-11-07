@@ -12,8 +12,7 @@ namespace AutomotrizAplicacion.Dominio
         public Persona()
         {
             Id = -1;
-            Nombre = "";
-            Apellido = "";
+            NombreCompleto = "";
             Dni = "";
             NroTel = "";
             Email = "";
@@ -21,12 +20,13 @@ namespace AutomotrizAplicacion.Dominio
             Altura = -1;
             CodPostal = -1;
             TipoDoc = -1;
+            Apellido = "";
+            Nombre = "";
         }
-        public Persona(int id, string nombre, string apellido, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc)
+        public Persona(int id, string nombreC, string dni, string nroTel, string email, string calle, int altura, int codPostal, int tipoDoc, string apellido,string nombre)
         {
             Id = id;
-            Nombre = nombre;
-            Apellido = apellido;
+            NombreCompleto = nombreC;
             Dni = dni;
             NroTel = nroTel;
             Email = email;
@@ -34,9 +34,12 @@ namespace AutomotrizAplicacion.Dominio
             Altura = altura;
             CodPostal = codPostal;
             TipoDoc = tipoDoc;
+            Apellido = apellido;
+            Nombre = nombre;
         }
 
         public int Id { get; set; }
+        public string NombreCompleto { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Dni { get; set; }

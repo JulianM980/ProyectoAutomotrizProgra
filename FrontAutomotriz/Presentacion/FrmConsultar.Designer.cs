@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.ColFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -113,16 +112,6 @@
             this.dgvDetalle.TabIndex = 44;
             this.dgvDetalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalle_CellContentClick);
             // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(37, 449);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(119, 27);
-            this.btnEditar.TabIndex = 45;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
             // ColFactura
             // 
             this.ColFactura.HeaderText = "Factura #";
@@ -155,7 +144,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 519);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox1);
@@ -177,7 +165,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.DataGridView dgvDetalle;
-        private System.Windows.Forms.Button btnEditar;
         private TextBox txtAnio;
         private DataGridViewTextBoxColumn ColFactura;
         private DataGridViewTextBoxColumn ColCliente;

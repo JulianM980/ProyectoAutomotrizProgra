@@ -14,12 +14,28 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
     {
         public bool Actualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@nombre",cliente.Nombre));
+            lst.Add(new Parametro("@apellido",cliente.Apellido));
+            lst.Add(new Parametro("@doc",cliente.Dni));
+            lst.Add(new Parametro("@tel",cliente.NroTel));
+            lst.Add(new Parametro("@email",cliente.Email));
+            lst.Add(new Parametro("@calle",cliente.Calle));
+            lst.Add(new Parametro("@altura",cliente.Altura));
+            lst.Add(new Parametro("@codP",cliente.CodPostal));
+            lst.Add(new Parametro("@tipoDoc",cliente.TipoDoc));
+            lst.Add(new Parametro("@tipo",cliente.TipoCliente.Id));
+            lst.Add(new Parametro("@estado",cliente.Estado));
+            lst.Add(new Parametro("@idModificar",cliente.Id));
+
+            return HelperDB.ObtenerInstancia().Ejecutar("actualizar_cliente", lst);
         }
 
         public bool BajaLogica(int idCliente)
         {
-            throw new NotImplementedException();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@idCliente",idCliente));
+            return HelperDB.ObtenerInstancia().BajaLogica("baja_cliente",lst);
         }
 
         public bool ComprobarCredenciales(string user, string pass)
@@ -29,7 +45,20 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
 
         public bool Insertar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            List<Parametro> pMaestro = new List<Parametro>();
+            pMaestro.Add(new Parametro("@nombre", cliente.Nombre));
+            pMaestro.Add(new Parametro("@apellido", cliente.Apellido));
+            pMaestro.Add(new Parametro("@doc", cliente.Dni));
+            pMaestro.Add(new Parametro("@tel", cliente.NroTel));
+            pMaestro.Add(new Parametro("@email", cliente.Email));
+            pMaestro.Add(new Parametro("@calle", cliente.Calle));
+            pMaestro.Add(new Parametro("@altura", cliente.Altura));
+            pMaestro.Add(new Parametro("@codp", cliente.CodPostal));
+            pMaestro.Add(new Parametro("@tipoDoc", cliente.TipoDoc));
+
+            
+
+            return HelperDB.ObtenerInstancia().InsertarCliente("INS_DATOS", pMaestro, "@idO", "ins_datos_clientes", cliente);
         }
 
         public List<Cliente> Obtener()
@@ -41,10 +70,10 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
             {
                 Cliente cliente = new Cliente();
                 cliente.IdCliente = Convert.ToInt16(row["idCliente"]);
-                cliente.TipoCliente = Convert.ToInt16(row["idTipoCliente"]);
+                cliente.TipoCliente.Id = Convert.ToInt16(row["idTipoCliente"]);
+                cliente.TipoCliente.Tipo = row["nombre_tipo"].ToString();
                 cliente.Estado = Convert.ToBoolean(row["estadoCliente"]);
-                cliente.Apellido = row["apellido"].ToString();
-                cliente.Nombre = row["nombre"].ToString();
+                cliente.NombreCompleto = row["nombre_completo"].ToString();
                 cliente.Dni = row["documento"].ToString();
                 cliente.NroTel = row["nroTel"].ToString();
                 cliente.Email = row["email"].ToString();
@@ -56,6 +85,69 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
                 clientes.Add(cliente);
             }
             return clientes;
+        }
+
+        public List<TipoCliente> ObtenerTiposClientes()
+        {
+            List<TipoCliente> tipos = new List<TipoCliente>();
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("Tipos_Clientes");
+            if (dt == null) return tipos;
+            foreach (DataRow row in dt.Rows)
+            {
+                TipoCliente tipo = new TipoCliente();
+                tipo.Id = Convert.ToInt16(row["idTipoCliente"]);
+                tipo.Tipo = row["nombre"].ToString();
+               
+
+                tipos.Add(tipo);
+            }
+            return tipos;
+        }
+
+        public List<TipoDoc> ObtenerTiposDoc()
+        {
+            List<TipoDoc> tipos = new List<TipoDoc>();
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("Tipos_Docs");
+            if (dt == null) return tipos;
+            foreach (DataRow row in dt.Rows)
+            {
+                TipoDoc tipo = new TipoDoc();
+                tipo.Id = Convert.ToInt16(row["idTipoDoc"]);
+                tipo.Tipo = row["nombre"].ToString();
+
+
+                tipos.Add(tipo);
+            }
+            return tipos;
+        }
+
+        public Cliente ObtenerUno(int id)
+        {
+            Cliente cliente = new Cliente();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@idCliente",id));
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("OB_CLIENTE",lst);
+            foreach (DataRow row in dt.Rows)
+            {
+                cliente.Id = Convert.ToInt16(row["idDatos"]);
+                cliente.IdCliente = Convert.ToInt16(row["idCliente"]);
+                cliente.TipoCliente.Id = Convert.ToInt16(row["idTipoCliente"]);
+                cliente.TipoCliente.Tipo = row["nombre_tipo"].ToString();
+                cliente.Estado = Convert.ToBoolean(row["estadoCliente"]);
+                cliente.NombreCompleto = row["nombre_completo"].ToString();
+                cliente.Nombre = row["nombre"].ToString();
+                cliente.Apellido = row["apellido"].ToString();
+                cliente.Dni = row["documento"].ToString();
+                cliente.NroTel = row["nroTel"].ToString();
+                cliente.Email = row["email"].ToString();
+                cliente.Calle = row["calle"].ToString();
+                cliente.Altura = Convert.ToInt32(row["altura"]);
+                cliente.CodPostal = Convert.ToInt32(row["codPostal"]);
+                cliente.TipoDoc = Convert.ToInt32(row["idTipoDoc"]);
+
+               
+            }
+            return cliente;
         }
     }
 }

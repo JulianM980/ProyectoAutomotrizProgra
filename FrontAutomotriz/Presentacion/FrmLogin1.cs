@@ -25,21 +25,26 @@ namespace FrontAutomotriz.Presentacion
         {
             string usuario = txtUsuario.Text;
             string contrasenia = txtContraseña.Text;
-            string url = "http://localhost:5197/credenciales/"+usuario+"/"+contrasenia;
 
-            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
-
-            var aux = JsonConvert.DeserializeObject<bool>(result);
-            if (aux)
+            bool usuarioOk = await ConsultarCredenciales(usuario,contrasenia); 
+            if (usuarioOk)
             {
                 new FrmIndex().Show();
                 this.Hide();
             }
             else {
-                lblError.Text = "Usuario o contraseña incorrectos. Intente de nuevo";
+                lblError.Text = "Usuario o contraseña incorrectos";
                 lblError.Visible = true;
                 txtContraseña.Text = "";
             }
+        }
+        private async Task<bool> ConsultarCredenciales(string user, string pass) {
+            string url = "http://localhost:5197/credenciales/" + user + "/" + pass;
+
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+
+            var aux = JsonConvert.DeserializeObject<bool>(result);
+            return aux.Equals(true);
         }
     }
 }

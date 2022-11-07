@@ -8,28 +8,28 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Altas.Forms
+namespace FrontAutomotriz.Presentacion
 {
-    public partial class FrmNuevoCliente : Form
+    public partial class FrmModificarCliente : Form
     {
         private Cliente oCliente;
-        public FrmNuevoCliente()
+        public FrmModificarCliente(int idCliente)
         {
             InitializeComponent();
             oCliente = new Cliente();
+            oCliente.IdCliente = idCliente;
         }
-
-        private async void FrmNuevoCliente_Load(object sender, EventArgs e)
+        private async void FrmModificarCliente_Load(object sender, EventArgs e)
         {
             await CargarTiposClientes();
             await CargarTiposDocumentos();
+            await CargarCliente(oCliente.IdCliente);
         }
-        #region METODOS PRIVADOS
-        private async Task CargarTiposClientes() {
+        private async Task CargarTiposClientes()
+        {
             string url = "http://localhost:5197/tiposClientes";
             var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<TipoCliente>>(result);
@@ -38,7 +38,8 @@ namespace Altas.Forms
             cbTipoCliente.DisplayMember = "Tipo";
             cbTipoCliente.ValueMember = "Id";
         }
-        private async Task CargarTiposDocumentos() {
+        private async Task CargarTiposDocumentos()
+        {
             string url = "http://localhost:5197/tiposDocs";
             var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<TipoCliente>>(result);
@@ -47,8 +48,23 @@ namespace Altas.Forms
             cbTipoDoc.DisplayMember = "Tipo";
             cbTipoDoc.ValueMember = "Id";
         }
-        
-        #endregion
+        private async Task CargarCliente(int id)
+        {
+            string url = $"http://localhost:5197/cliente/{id}";
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+            var cliente = JsonConvert.DeserializeObject<Cliente>(result);
+
+            txtApellido.Text = cliente.Apellido;
+            txtNombre.Text = cliente.Nombre;
+            txtNroDoc.Text = cliente.Dni;
+            cbTipoCliente.SelectedValue = cliente.TipoCliente.Id;
+            cbTipoDoc.SelectedValue = cliente.TipoDoc;
+            txtCalle.Text = cliente.Calle;
+            txtAltura.Text = cliente.Altura.ToString();
+            txtCodigoPostal.Text = cliente.CodPostal.ToString();
+            txtTelefono.Text = cliente.NroTel;
+            txtEmail.Text = cliente.Email;
+        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -68,30 +84,24 @@ namespace Altas.Forms
             oCliente.CodPostal = Convert.ToInt32(txtCodigoPostal.Text);
             oCliente.NroTel = txtTelefono.Text;
             oCliente.Email = txtEmail.Text;
-            oCliente.Estado = true;
 
-            bool saveOk = await GuardarCliente(oCliente);
+            bool save = await ActualizarCliente(oCliente);
 
-            if (saveOk)
+            if (save)
             {
-                MessageBox.Show("Cliente registrado con exito");
+                MessageBox.Show("Cliente actualizado");
                 this.Dispose();
             }
             else {
-                MessageBox.Show("Error al cargar cliente. Intente mas tarde");
+                MessageBox.Show("Error al actualizar");
+
             }
         }
-        private async Task<bool> GuardarCliente(Cliente oCliente)
-        {
-            string bodyContent = JsonConvert.SerializeObject(oCliente);
-
-            string url = "http://localhost:5197/clientes";
-
-            //StringContent le pasamos el contenido,el tipo de codificacion y el tipo de dato
-            var result = await ClientSingleton.ObtenerCliente().PostAsync(url, bodyContent);
+        private async Task<bool> ActualizarCliente(Cliente cliente) {
+            string url = "http://localhost:5197/clientes/actualizar";
+            string bodyContent = JsonConvert.SerializeObject(cliente);
+            var result = await ClientSingleton.ObtenerCliente().PutAsync(url,bodyContent);
             return result.Equals("true");
-
         }
-       
     }
 }

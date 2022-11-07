@@ -24,17 +24,16 @@ namespace Altas
             oFactura = new Factura();
         }
 
-        private void FrmAltaFactura_Load(object sender, EventArgs e)
+        private async void FrmAltaFactura_Load(object sender, EventArgs e)
         {
-            CargarCliente();
-            //CargarVendedor();
-            //CargarAutoPlan();
-            CargarMarcas();
+            await CargarCliente();
+            await CargarVendedor();
+            await CargarMarcas();
             dtpFecha.Value = DateTime.Now;
             cboCliente.SelectedIndex = -1;
             cboVendedor.SelectedIndex = -1;
-            cboAutoPlan.SelectedIndex = -1;
             cboMarca.SelectedIndex = -1;
+            txtDescuento.Text = "0";
             //ProximaFactura();
         }
 
@@ -44,7 +43,7 @@ namespace Altas
                 this.Close();
         }
 
-        private async void CargarCliente()
+        private async Task CargarCliente()
         {
             string url = "http://localhost:5197/clientes";
 
@@ -52,22 +51,20 @@ namespace Altas
 
             var lst = JsonConvert.DeserializeObject<List<Cliente>>(result);
             cboCliente.DataSource = lst;
-            cboCliente.DisplayMember = "Apellido";
+            cboCliente.DisplayMember = "NombreCompleto";
             cboCliente.ValueMember = "IdCliente";
         }
-        //private void CargarVendedor()
-        //{
-        //    cboVendedor.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_VENDEDOR");
-        //    cboVendedor.DisplayMember = "vendedor";
-        //    cboVendedor.ValueMember = "idVendedor";
-        //}
-        //private void CargarAutoPlan()
-        //{
-        //    cboAutoPlan.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_AUTOPLAN");
-        //    cboAutoPlan.DisplayMember = "CantidadCuotas";
-        //    cboAutoPlan.ValueMember = "idAutoPlan";
-        //}
-        private async void CargarMarcas()
+        private async Task CargarVendedor()
+        {
+            string url = "http://localhost:5197/vendedores";
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Vendedor>>(result);
+            cboVendedor.DataSource = lst;
+            cboVendedor.DisplayMember = "NombreCompleto";
+            cboVendedor.ValueMember = "IdVendedor";
+        }
+       
+        private async Task CargarMarcas()
         {
             string url = "http://localhost:5197/marcas";
 
@@ -120,7 +117,7 @@ namespace Altas
                 }
             }
 
-            Producto oProducto = (Producto)cboProducto.SelectedItem;//no se como hacer para que muestre el valor seleccionado 
+            Producto oProducto = (Producto)cboProducto.SelectedItem; 
             int cantidad = Convert.ToInt32(txtCantidad.Text);
 
             DetalleDocumento detalle = new DetalleDocumento( cantidad,oProducto);
@@ -133,16 +130,16 @@ namespace Altas
         private void CalcularTotal()
         {
             double total = oFactura.CalcularTotal();
-            txtTotal.Text = total.ToString();
+            txtSubTotal.Text = total.ToString();
 
             if (txtDescuento.Text != "")
             {
                 double dto = (total * Convert.ToDouble(txtDescuento.Text)) / 100;
-                txtSubTotal.Text = (total - dto).ToString();
+                txtTotal.Text = (total - dto).ToString();
             }
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private async void btnAceptar_Click(object sender, EventArgs e)
         {
             if (dgvDetalle.Rows.Count == 0)
             {
@@ -159,26 +156,34 @@ namespace Altas
                 MessageBox.Show("Debe seleccionar un vendedor!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-
-            GuardarFactura();
-        }
-        private void GuardarFactura()
-        {
             oFactura.Cliente = (Cliente)cboCliente.SelectedItem;
+            oFactura.Vendedor = (Vendedor)cboVendedor.SelectedItem;
             oFactura.Descuento = Convert.ToDouble(txtDescuento.Text);
             oFactura.Fecha = dtpFecha.Value;
-            oFactura.Plan = (AutoPlan)cboAutoPlan.SelectedItem;
-            
+            oFactura.Plan.IdAutoPlan = rbPlan1.Checked == true ? 1 : rbPlan2.Checked == true ? 2 : rbPlan3.Checked == true ? 3 : 0;
 
-            //if (HelperDB.CrearPresupuesto(oFactura))
-            //{
-            //    MessageBox.Show("Presupuesto registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    this.Dispose();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("ERROR. No se pudo registrar el presupuesto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            bool saveOk = await GuardarFactura(oFactura);
+            if (saveOk)
+            {
+                MessageBox.Show("Presupuesto registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo registrar el presupuesto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private async Task<bool> GuardarFactura(Factura oFactura)
+        {
+
+            string bodyContent = JsonConvert.SerializeObject(oFactura);
+
+            string url = "http://localhost:5197/facturas";
+
+            //StringContent le pasamos el contenido,el tipo de codificacion y el tipo de dato
+            var result = await ClientSingleton.ObtenerCliente().PostAsync(url, bodyContent);
+            return result.Equals("true");
+            
         }
 
         //private void ProximaFactura()
@@ -195,14 +200,22 @@ namespace Altas
             new FrmNuevoCliente().ShowDialog();
         }
 
-        private void btnNOrden_Click(object sender, EventArgs e)
-        {
-            //new FrmAltacOrden().ShowDialog();
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvDetalle_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvDetalle.CurrentCell.ColumnIndex == 4) {
+                DialogResult msg = MessageBox.Show("Desea retirar este producto?","Detalles",MessageBoxButtons.YesNo);
+                if (msg == DialogResult.Yes) {
+                    oFactura.QuitarDetalle(dgvDetalle.CurrentRow.Index);
+                    dgvDetalle.Rows.Remove(dgvDetalle.CurrentRow);
+                }
+            }
         }
     }
 }

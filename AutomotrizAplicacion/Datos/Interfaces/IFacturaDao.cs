@@ -10,6 +10,10 @@ namespace AutomotrizAplicacion.Servicios.Interfaces
     internal interface IFacturaDao
     {
         List<Factura> Obtener();
+        List<Factura> ObtenerAlgunas(int anio);
+        Factura ObtenerUna(int id);
+
+
         List<Producto> ObtenerProductos(string marca);
         List<Marca> ObtenerMarcas();
         List<Vendedor> ObtenerVendedores();
