@@ -1,4 +1,5 @@
-﻿using AutomotrizAplicacion.Dominio;
+﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Dominio;
 using AutomotrizAplicacion.Fachada;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,9 +11,9 @@ namespace AutomotrizApi.Controllers
     public class ClientesController : ControllerBase
     {
         private IDataClientes dataClientes;
-        public ClientesController()
+        public ClientesController(AbstractDaoFactory data)
         {
-            dataClientes = new DataClientes();
+            dataClientes = data.CrearDatosClientes();
         }
         [HttpGet("/clientes")]
         public IActionResult GetClientes() {
@@ -64,6 +65,21 @@ namespace AutomotrizApi.Controllers
             try
             {
                 lst = dataClientes.ObtenerTiposDoc();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+            }
+        }
+        [HttpGet("/clientesTipo/{id}")]
+        public IActionResult GetClientesPorTipo(int id)
+        {
+            List<Cliente> lst = null;
+            try
+            {
+                lst = dataClientes.ObtenerClientesPorTipo(id);
                 return Ok(lst);
             }
             catch (Exception)

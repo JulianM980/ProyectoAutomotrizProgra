@@ -87,6 +87,26 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
             return clientes;
         }
 
+        public List<Cliente> ObtenerClientePorTipo(int idTipo)
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@tipoCliente", idTipo));
+            DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("tipo_cliente", lst);
+            foreach (DataRow row in dt.Rows)
+            {
+                Cliente cliente = new Cliente();
+                cliente.Apellido = row["Apellido"].ToString();
+                cliente.Nombre = row["Nombre"].ToString();
+                cliente.Calle = row["Calle"].ToString();
+                cliente.Altura = Convert.ToInt16(row["Altura"]);
+                cliente.Email = row["Email"].ToString();
+                cliente.NroTel = row["Telefono"].ToString();
+                clientes.Add(cliente);
+            }
+            return clientes;
+        }
+
         public List<TipoCliente> ObtenerTiposClientes()
         {
             List<TipoCliente> tipos = new List<TipoCliente>();

@@ -1,20 +1,6 @@
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.exe.config
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.exe
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.Form1.resources
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.Properties.Resources.resources
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.GenerateResource.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.exe
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.pdb
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.exe.config
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.exe
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\bin\Debug\Reportes.pdb
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.AssemblyReference.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.SuggestedBindingRedirects.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.Properties.Resources.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.GenerateResource.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.csproj.CoreCompileInputs.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.exe
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\Reportes\obj\Debug\Reportes.pdb

@@ -1,17 +1,20 @@
 ﻿using AutomotrizAplicacion.Dominio;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AutomotrizAplicacion.Servicios.Interfaces
 {
-    internal interface IFacturaDao
+    public interface IFacturaDao
     {
         List<Factura> Obtener();
         List<Factura> ObtenerAlgunas(int anio);
+
         Factura ObtenerUna(int id);
+   
 
 
         List<Producto> ObtenerProductos(string marca);

@@ -9,16 +9,35 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Presentacion\Reporte\ListadoFacturas.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Reporte\ListadoFacturas.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="6.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.15" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AutomotrizAplicacion\AutomotrizAplicacion.csproj" />
-    <ProjectReference Include="..\Reportes\Reportes.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Presentacion\FrmListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\Reporte\DSListado.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSListado.xsd</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -31,6 +50,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Presentacion\Reporte\DSListado.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DSListado.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 ﻿using Altas;
 using Altas.Consultar;
 using FrontAutomotriz.Presentacion;
+using Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -82,7 +83,7 @@ namespace ProyectoAutomotriz
 
         private void Consulta4_Click(object sender, EventArgs e)
         {
-           AbrirFormulario(new Reportes.FrmReporte());
+           AbrirFormulario(new Reportes.FrmListado());
 
         }
 
@@ -135,12 +136,14 @@ namespace ProyectoAutomotriz
 
         private void btnListado_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmListado());
             EsconderSubMenu();
 
         }
 
         private void btnReporte_Click(object sender, EventArgs e)
         {
+            AbrirFormulario(new FrmReporte());
             EsconderSubMenu();
 
         }
@@ -153,7 +156,7 @@ namespace ProyectoAutomotriz
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            new 
+            AbrirFormulario(new FrmLegajos()); 
         }
     }
 }

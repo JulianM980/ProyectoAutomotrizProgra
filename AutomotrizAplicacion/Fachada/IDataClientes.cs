@@ -11,6 +11,7 @@ namespace AutomotrizAplicacion.Fachada
     {
         List<Cliente> ObtenerClientes();
         Cliente ObtenerUno(int id);
+        List<Cliente> ObtenerClientesPorTipo(int idTipo);
 
         List<TipoCliente> ObtenerTiposClientes();
         List<TipoDoc> ObtenerTiposDoc();

@@ -11,6 +11,7 @@ namespace AutomotrizAplicacion.Datos.Interfaces
     {
         List<Cliente> Obtener();
         Cliente ObtenerUno(int id);
+        List<Cliente> ObtenerClientePorTipo(int idTipo);
         List<TipoCliente> ObtenerTiposClientes();
         List<TipoDoc> ObtenerTiposDoc();
 

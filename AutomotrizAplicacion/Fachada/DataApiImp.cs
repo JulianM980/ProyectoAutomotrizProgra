@@ -1,8 +1,10 @@
-﻿using AutomotrizAplicacion.Dominio;
+﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Dominio;
 using AutomotrizAplicacion.Servicios.Implementaciones;
 using AutomotrizAplicacion.Servicios.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +16,7 @@ namespace AutomotrizAplicacion.Fachada
         private IFacturaDao dao;
         public DataApiImp()
         {
-            //inyeccion de dependencias
-            dao = new FacturaDao();
+            dao = new DaoFactory().CrearFacturaDao();
         }
         public bool ActualizarFactura(Factura factura)
         {
@@ -61,5 +62,7 @@ namespace AutomotrizAplicacion.Fachada
         {
             return dao.ObtenerUna(id);
         }
+
+        
     }
 }
