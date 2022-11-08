@@ -41,3 +41,13 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\ne
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\ref\AutomotrizApi.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.csproj.AssemblyReference.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.AssemblyInfoInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.AssemblyInfo.cs
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.csproj.CoreCompileInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\refint\AutomotrizApi.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizApi\obj\Debug\net6.0\AutomotrizApi.pdb

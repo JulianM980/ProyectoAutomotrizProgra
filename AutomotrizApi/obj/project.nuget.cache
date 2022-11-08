@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IG63zTyKdAGYeSwo05s/+xB7CnHT2Vr8o+cJxb7LyR0GxJXe88+xcKnmVWu8KoIR3iul+vO8drPo9jWEBO8+6A==",
+  "dgSpecHash": "8jUnmz665plhnAtp1630tHduuuGxdx3596AMZPmEkJyi9c7Eo8r7KxacQY+GEE+LVebNtGNXWGLSUFKjZ1kZ9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
+  "projectFilePath": "D:\\Mis documentos\\GitHub\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

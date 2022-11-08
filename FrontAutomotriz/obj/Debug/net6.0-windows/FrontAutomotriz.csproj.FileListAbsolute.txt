@@ -37,3 +37,22 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ref\FrontAutomotriz.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.AssemblyReference.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.FrmAltaFactura.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmConsultaCliente.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Consultar.FrmConsultar.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmDetallesFactura.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ProyectoAutomotriz.FrmIndex.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLegajos.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLogin1.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmModificarCliente.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Forms.FrmNuevoCliente.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Properties.Resources.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.GenerateResource.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfoInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfo.cs
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CoreCompileInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\refint\FrontAutomotriz.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.pdb
