@@ -4,86 +4,14 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.pdb
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.AssemblyReference.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.FrmAltaFactura.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmConsultaCliente.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Consultar.FrmConsultar.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmDetallesFactura.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ProyectoAutomotriz.FrmIndex.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLogin1.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmModificarCliente.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Forms.FrmNuevoCliente.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Properties.Resources.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.GenerateResource.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfoInputs.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfo.cs
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CopyComplete
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\refint\FrontAutomotriz.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.pdb
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.genruntimeconfig.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ref\FrontAutomotriz.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.AssemblyReference.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.FrmAltaFactura.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmConsultaCliente.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Consultar.FrmConsultar.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmDetallesFactura.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ProyectoAutomotriz.FrmIndex.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLegajos.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLogin1.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmModificarCliente.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Forms.FrmNuevoCliente.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Properties.Resources.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.GenerateResource.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfoInputs.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfo.cs
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CoreCompileInputs.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\refint\FrontAutomotriz.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.pdb
-<<<<<<< HEAD
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.exe
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.deps.json
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.runtimeconfig.json
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FrontAutomotriz.pdb
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Reportes.exe
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.pdb
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Reportes.pdb
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Reportes.exe.config
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CopyComplete
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.genruntimeconfig.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ref\FrontAutomotriz.dll
-=======
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLegajos.resources
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.WinForms.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.Common.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Reportes.FrmListado.resources
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\es\Microsoft.CodeAnalysis.resources.dll
@@ -110,5 +38,34 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\bin\Debug\net6.0-windows\AutomotrizAplicacion.pdb
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.FrmAltaFactura.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmConsultaCliente.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Consultar.FrmConsultar.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmDetallesFactura.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ProyectoAutomotriz.FrmIndex.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLegajos.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Reportes.FrmListado.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmLogin1.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Presentacion.FrmModificarCliente.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Altas.Forms.FrmNuevoCliente.resources
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\Reportes.FrmReporte.resources
->>>>>>> rama
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.Properties.Resources.resources
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.csproj.CopyComplete
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\refint\FrontAutomotriz.dll
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.pdb
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\FrontAutomotriz.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\FrontAutomotriz\obj\Debug\net6.0-windows\ref\FrontAutomotriz.dll

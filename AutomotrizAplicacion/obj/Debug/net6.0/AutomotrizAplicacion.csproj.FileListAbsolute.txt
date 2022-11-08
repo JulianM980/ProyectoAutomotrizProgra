@@ -1,3 +1,13 @@
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.AssemblyReference.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.Properties.Resources.resources
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.GenerateResource.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfoInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfo.cs
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.CoreCompileInputs.cache
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\refint\AutomotrizAplicacion.dll
+D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.deps.json
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.pdb
@@ -21,13 +31,3 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\D
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\refint\AutomotrizAplicacion.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.pdb
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\ref\AutomotrizAplicacion.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.AssemblyReference.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.Properties.Resources.resources
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.GenerateResource.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.GeneratedMSBuildEditorConfig.editorconfig
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfoInputs.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfo.cs
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.CoreCompileInputs.cache
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\refint\AutomotrizAplicacion.dll
-D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.pdb
