@@ -72,6 +72,8 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
             return facturas;
         }
 
+      
+
         public List<Marca> ObtenerMarcas()
         {
             List<Marca> lst = new List<Marca>();

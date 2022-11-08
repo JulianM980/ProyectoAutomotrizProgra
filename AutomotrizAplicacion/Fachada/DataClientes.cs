@@ -1,4 +1,5 @@
-﻿using AutomotrizAplicacion.Datos.Implementaciones;
+﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Datos.Implementaciones;
 using AutomotrizAplicacion.Datos.Interfaces;
 using AutomotrizAplicacion.Dominio;
 using System;
@@ -14,8 +15,7 @@ namespace AutomotrizAplicacion.Fachada
         private IClientesDao dao;
         public DataClientes()
         {
-            //inyeccion
-            dao = new ClientesDao();
+            dao = new DaoFactory().CrearClienteDao();
         }
         public bool ActualizarCliente(Cliente cliente)
         {
@@ -40,6 +40,11 @@ namespace AutomotrizAplicacion.Fachada
         public List<Cliente> ObtenerClientes()
         {
             return dao.Obtener();
+        }
+
+        public List<Cliente> ObtenerClientesPorTipo(int idTipo)
+        {
+            return dao.ObtenerClientePorTipo(idTipo);
         }
 
         public List<TipoCliente> ObtenerTiposClientes()

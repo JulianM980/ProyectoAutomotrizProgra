@@ -91,9 +91,6 @@
             "projectReferences": {
               "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
                 "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
-              },
-              "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj"
               }
             }
           }
@@ -115,6 +112,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "ReportViewerCore.WinForms": {
+              "target": "Package",
+              "version": "[15.1.15, )"
             }
           },
           "imports": [
@@ -138,21 +139,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj",
-        "projectName": "Reportes",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\Reportes\\Reportes.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

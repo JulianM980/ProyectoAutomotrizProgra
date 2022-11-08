@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomotrizApi", "Automotriz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontAutomotriz", "FrontAutomotriz\FrontAutomotriz.csproj", "{331554CF-3835-409F-8DD0-6E9F0057E4B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reportes", "Reportes\Reportes.csproj", "{F311F775-BE60-457B-9425-E607115A239A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reportes", "Reportes\Reportes.csproj", "{BF460BCC-6536-458A-BD8E-A4D4F1CBC7BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{331554CF-3835-409F-8DD0-6E9F0057E4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331554CF-3835-409F-8DD0-6E9F0057E4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331554CF-3835-409F-8DD0-6E9F0057E4B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F311F775-BE60-457B-9425-E607115A239A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F311F775-BE60-457B-9425-E607115A239A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F311F775-BE60-457B-9425-E607115A239A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F311F775-BE60-457B-9425-E607115A239A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF460BCC-6536-458A-BD8E-A4D4F1CBC7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF460BCC-6536-458A-BD8E-A4D4F1CBC7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF460BCC-6536-458A-BD8E-A4D4F1CBC7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF460BCC-6536-458A-BD8E-A4D4F1CBC7BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

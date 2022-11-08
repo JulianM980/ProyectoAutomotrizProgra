@@ -1,7 +1,9 @@
-﻿using AutomotrizAplicacion.Dominio;
+﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Dominio;
 using AutomotrizAplicacion.Fachada;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace AutomotrizApi.Controllers
 {
@@ -10,10 +12,10 @@ namespace AutomotrizApi.Controllers
     public class FacturasController : ControllerBase
     {
         private IDataApi dataApi;
-        public FacturasController()
+        public FacturasController(AbstractDaoFactory data)
         {
             //inyeccion de dependencias
-            dataApi = new DataApiImp();
+            dataApi = data.CrearDatosFactura();
         }
         [HttpGet("/facturas")]
         public IActionResult GetFacturas() {
@@ -59,7 +61,7 @@ namespace AutomotrizApi.Controllers
                 return StatusCode(500, "Error interrno. Intente Luego");
             }
         }
-
+        
 
         [HttpGet("/productos/{marca}")]
 

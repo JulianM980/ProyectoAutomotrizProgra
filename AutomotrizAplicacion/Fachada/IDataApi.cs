@@ -1,6 +1,7 @@
 ﻿using AutomotrizAplicacion.Dominio;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace AutomotrizAplicacion.Fachada
         List<Factura> ObtenerFacturas();
         List<Factura> ObtenerAlgunas(int anio);
         Factura ObtenerUna(int id);
+        
 
         List<Producto> ObtenerProductos(string marca);
         List<Marca> ObtenerMarcas();
