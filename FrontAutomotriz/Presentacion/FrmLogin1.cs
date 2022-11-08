@@ -23,6 +23,16 @@ namespace FrontAutomotriz.Presentacion
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                MessageBox.Show("Debe ingresar usuario y contraseña", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtContraseña.Text))
+            {
+                MessageBox.Show("Debe ingresar usuario y contraseña", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
             string usuario = txtUsuario.Text;
             string contrasenia = txtContraseña.Text;
 
@@ -39,6 +49,7 @@ namespace FrontAutomotriz.Presentacion
             }
         }
         private async Task<bool> ConsultarCredenciales(string user, string pass) {
+            
             string url = "http://localhost:5197/credenciales/" + user + "/" + pass;
 
             var result = await ClientSingleton.ObtenerCliente().GetAsync(url);

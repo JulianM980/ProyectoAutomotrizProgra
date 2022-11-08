@@ -701,19 +701,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
       "projectName": "AutomotrizApi",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizApi\\obj\\",
+      "projectPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizApi\\AutomotrizApi.csproj",
+      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -727,8 +732,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
+            "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
+              "projectPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
             }
           }
         }
@@ -767,7 +772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
