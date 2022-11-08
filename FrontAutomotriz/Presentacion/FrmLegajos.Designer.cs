@@ -46,17 +46,20 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(800, 800);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(285, 185);
+            this.label1.Location = new System.Drawing.Point(200, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(381, 112);
             this.label1.TabIndex = 8;
@@ -65,10 +68,13 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(352, 81);
+            this.label2.Location = new System.Drawing.Point(260, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 38);
             this.label2.TabIndex = 10;
@@ -82,11 +88,11 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 56;
-            this.iconPictureBox2.Location = new System.Drawing.Point(731, 12);
+            this.iconPictureBox2.IconSize = 55;
+            this.iconPictureBox2.Location = new System.Drawing.Point(731, 11);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(56, 62);
+            this.iconPictureBox2.Size = new System.Drawing.Size(56, 55);
             this.iconPictureBox2.TabIndex = 11;
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
@@ -99,20 +105,20 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 56;
-            this.iconPictureBox1.Location = new System.Drawing.Point(662, 12);
+            this.iconPictureBox1.IconSize = 55;
+            this.iconPictureBox1.Location = new System.Drawing.Point(662, 11);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(56, 62);
+            this.iconPictureBox1.Size = new System.Drawing.Size(56, 55);
             this.iconPictureBox1.TabIndex = 12;
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // FrmLegajos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 800);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label2);
