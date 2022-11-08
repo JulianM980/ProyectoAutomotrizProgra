@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnRefrescar = new System.Windows.Forms.Button();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colModificar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.colBorrar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnRefrescar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,46 +59,6 @@
             this.dgvClientes.Size = new System.Drawing.Size(577, 286);
             this.dgvClientes.TabIndex = 0;
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(421, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Nuevo Cliente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(547, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(45, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Clientes";
-            // 
-            // btnRefrescar
-            // 
-            this.btnRefrescar.Location = new System.Drawing.Point(295, 403);
-            this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(120, 23);
-            this.btnRefrescar.TabIndex = 1;
-            this.btnRefrescar.Text = "Refrescar";
-            this.btnRefrescar.UseVisualStyleBackColor = true;
-            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // colNombre
             // 
@@ -136,6 +96,58 @@
             this.colBorrar.ReadOnly = true;
             this.colBorrar.Text = "Eliminar Cliente";
             this.colBorrar.UseColumnTextForButtonValue = true;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(399, 392);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Nuevo Cliente";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(549, 392);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(73, 31);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(45, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Clientes";
+            // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.AutoSize = true;
+            this.btnRefrescar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefrescar.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRefrescar.Location = new System.Drawing.Point(273, 392);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(120, 31);
+            this.btnRefrescar.TabIndex = 1;
+            this.btnRefrescar.Text = "Refrescar";
+            this.btnRefrescar.UseVisualStyleBackColor = false;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // FrmConsultaCliente
             // 
