@@ -28,6 +28,11 @@ namespace AutomotrizAplicacion.Datos
             return new DataApiImp();
         }
 
+        public override IDataUser CrearDatosUsuarios()
+        {
+            return new DataUser();
+        }
+
         public override IFacturaDao CrearFacturaDao()
         {
             return new FacturaDao();

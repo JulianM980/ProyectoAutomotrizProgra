@@ -99,7 +99,10 @@ namespace Altas
                 MessageBox.Show("Debe seleccionar un PRODUCTO!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-
+            if (!int.TryParse(txtDescuento.Text, out _)) {
+                MessageBox.Show("No puede ingresar letras como descuento");
+                return;
+            }
             if (txtCantidad.Text == "" || !int.TryParse(txtCantidad.Text, out _))
             {
                 MessageBox.Show("Debe ingresar una cantidad válida!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -156,6 +159,10 @@ namespace Altas
                 MessageBox.Show("Debe seleccionar un vendedor!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+            if (txtDescuento.Text.Equals("")) {
+                MessageBox.Show("Ingrese descuento.");
+                return;
+            }
             oFactura.Cliente = (Cliente)cboCliente.SelectedItem;
             oFactura.Vendedor = (Vendedor)cboVendedor.SelectedItem;
             oFactura.Descuento = Convert.ToDouble(txtDescuento.Text);
@@ -165,7 +172,7 @@ namespace Altas
             bool saveOk = await GuardarFactura(oFactura);
             if (saveOk)
             {
-                MessageBox.Show("Presupuesto registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Factura registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Dispose();
             }
             else
@@ -224,8 +231,7 @@ namespace Altas
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) this.Dispose();
+            this.Dispose();
         }
     }
 }

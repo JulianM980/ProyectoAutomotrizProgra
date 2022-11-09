@@ -62,7 +62,6 @@ namespace ProyectoAutomotriz
             this.lblTituloPrincipal.Parent = pictureBox1;
             this.iconPictureBox1.Parent = pictureBox1;
             this.iconPictureBox2.Parent = pictureBox1;
-            this.lblDescripcion.Parent = pictureBox1;
 
             Paneles();
         }

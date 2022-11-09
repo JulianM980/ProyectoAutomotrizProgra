@@ -30,6 +30,10 @@ namespace Altas.Consultar
 
         private async void btnConsultar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtAnio.Text, out _)) {
+                MessageBox.Show("El año deben ser un numero entero mayor a 2018");
+                return;
+            }
             string anio = txtAnio.Text;
             string url = $"http://localhost:5197/facturas/{anio}";
 
@@ -70,8 +74,7 @@ namespace Altas.Consultar
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) this.Dispose();
+            this.Dispose();
         }
     }
 }

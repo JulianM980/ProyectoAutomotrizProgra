@@ -15,5 +15,6 @@ namespace AutomotrizAplicacion.Datos
         public abstract IClientesDao CrearClienteDao();
         public abstract IDataApi CrearDatosFactura();
         public abstract IDataClientes CrearDatosClientes();
+        public abstract IDataUser CrearDatosUsuarios();
     }
 }

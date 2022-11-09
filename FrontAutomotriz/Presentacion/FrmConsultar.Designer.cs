@@ -39,11 +39,9 @@
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -178,30 +176,12 @@
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 39;
-            this.iconPictureBox1.Location = new System.Drawing.Point(777, 12);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(39, 45);
-            this.iconPictureBox1.TabIndex = 46;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
-            // 
             // FrmConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 554);
             this.Controls.Add(this.iconPictureBox2);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox1);
@@ -215,7 +195,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,6 +212,5 @@
         private DataGridViewTextBoxColumn ColFecha;
         private DataGridViewButtonColumn ColAcciones;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

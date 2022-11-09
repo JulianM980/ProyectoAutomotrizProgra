@@ -43,7 +43,6 @@
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblTituloPrincipal = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -254,7 +253,6 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.panelContenedor.Controls.Add(this.lblDescripcion);
             this.panelContenedor.Controls.Add(this.lblTituloPrincipal);
             this.panelContenedor.Controls.Add(this.iconPictureBox2);
             this.panelContenedor.Controls.Add(this.iconPictureBox1);
@@ -265,19 +263,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(864, 654);
             this.panelContenedor.TabIndex = 1;
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDescripcion.Location = new System.Drawing.Point(285, 310);
-            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(448, 24);
-            this.lblDescripcion.TabIndex = 8;
-            this.lblDescripcion.Text = "Al que se le ocurra ponga un descripcion aca jjajajaj";
             // 
             // lblTituloPrincipal
             // 
@@ -376,7 +361,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTituloPrincipal;
-        private System.Windows.Forms.Label lblDescripcion;
         private Panel pReportes;
         private Button btnReporte;
         private Button btnListado;

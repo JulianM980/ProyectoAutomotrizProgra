@@ -61,10 +61,8 @@
             this.rbPlan2 = new System.Windows.Forms.RadioButton();
             this.rbPlan3 = new System.Windows.Forms.RadioButton();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -276,7 +274,6 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Enabled = false;
             this.dtpFecha.Location = new System.Drawing.Point(340, 14);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFecha.Name = "dtpFecha";
@@ -368,6 +365,7 @@
             this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(88, 31);
+
             this.btnCargar.TabIndex = 16;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = false;
@@ -444,30 +442,12 @@
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 56;
-            this.iconPictureBox1.Location = new System.Drawing.Point(726, 12);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(56, 62);
-            this.iconPictureBox1.TabIndex = 58;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
-            // 
             // FrmAltaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 654);
             this.Controls.Add(this.iconPictureBox2);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.rbPlan3);
             this.Controls.Add(this.rbPlan2);
             this.Controls.Add(this.rbPlan1);
@@ -503,7 +483,6 @@
             this.Load += new System.EventHandler(this.FrmAltaFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -544,7 +523,6 @@
         private RadioButton rbPlan2;
         private RadioButton rbPlan3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
 

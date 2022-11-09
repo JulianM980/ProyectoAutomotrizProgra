@@ -105,8 +105,7 @@ namespace FrontAutomotriz.Presentacion
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) this.Dispose();
+            this.Dispose();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AutomotrizAplicacion.Fachada;
+﻿using AutomotrizAplicacion.Datos;
+using AutomotrizAplicacion.Fachada;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,9 +10,9 @@ namespace AutomotrizApi.Controllers
     public class UsuariosController : ControllerBase
     {
         private IDataUser dataUsuarios;
-        public UsuariosController()
+        public UsuariosController(AbstractDaoFactory data)
         {
-            dataUsuarios = new DataUser();
+            dataUsuarios = data.CrearDatosUsuarios();
         }
         [HttpGet("/credenciales/{user}/{pass}")]
         public IActionResult GetCredenciales(string user,string pass) {

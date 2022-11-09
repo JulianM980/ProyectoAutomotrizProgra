@@ -52,10 +52,8 @@
             this.lblNroFactura = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // rbPlan3
@@ -63,7 +61,7 @@
             this.rbPlan3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan3.AutoSize = true;
-            this.rbPlan3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan3.BackColor = System.Drawing.SystemColors.Control;
             this.rbPlan3.Enabled = false;
             this.rbPlan3.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -80,7 +78,7 @@
             this.rbPlan2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan2.AutoSize = true;
-            this.rbPlan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan2.BackColor = System.Drawing.SystemColors.Control;
             this.rbPlan2.Enabled = false;
             this.rbPlan2.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -97,7 +95,7 @@
             this.rbPlan1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan1.AutoSize = true;
-            this.rbPlan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan1.BackColor = System.Drawing.SystemColors.Control;
             this.rbPlan1.Enabled = false;
             this.rbPlan1.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -349,30 +347,12 @@
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 39;
-            this.iconPictureBox1.Location = new System.Drawing.Point(635, 11);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(39, 40);
-            this.iconPictureBox1.TabIndex = 85;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
-            // 
             // FrmDetallesFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 531);
             this.Controls.Add(this.iconPictureBox2);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.rbPlan3);
             this.Controls.Add(this.rbPlan2);
@@ -398,7 +378,6 @@
             this.Load += new System.EventHandler(this.FrmDetallesFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,6 +409,5 @@
         private DataGridViewTextBoxColumn ColPrecioUnitario;
         private DataGridViewTextBoxColumn ColId;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
