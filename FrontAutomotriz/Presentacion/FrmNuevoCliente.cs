@@ -93,6 +93,17 @@ namespace Altas.Forms
 
         }
 
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) this.Dispose();
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
