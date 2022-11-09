@@ -57,55 +57,64 @@
             // rbPlan3
             // 
             this.rbPlan3.AutoSize = true;
-            this.rbPlan3.Location = new System.Drawing.Point(499, 120);
+            this.rbPlan3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan3.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbPlan3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbPlan3.Location = new System.Drawing.Point(487, 128);
             this.rbPlan3.Name = "rbPlan3";
-            this.rbPlan3.Size = new System.Drawing.Size(156, 19);
+            this.rbPlan3.Size = new System.Drawing.Size(154, 16);
             this.rbPlan3.TabIndex = 82;
             this.rbPlan3.TabStop = true;
             this.rbPlan3.Text = "120 Cuotas - 34% Cuotas";
-            this.rbPlan3.UseVisualStyleBackColor = true;
+            this.rbPlan3.UseVisualStyleBackColor = false;
             // 
             // rbPlan2
             // 
             this.rbPlan2.AutoSize = true;
-            this.rbPlan2.Location = new System.Drawing.Point(345, 120);
+            this.rbPlan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan2.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbPlan2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbPlan2.Location = new System.Drawing.Point(339, 128);
             this.rbPlan2.Name = "rbPlan2";
-            this.rbPlan2.Size = new System.Drawing.Size(148, 19);
+            this.rbPlan2.Size = new System.Drawing.Size(148, 16);
             this.rbPlan2.TabIndex = 81;
             this.rbPlan2.TabStop = true;
             this.rbPlan2.Text = "84 Cuotas - 30% Interes";
-            this.rbPlan2.UseVisualStyleBackColor = true;
+            this.rbPlan2.UseVisualStyleBackColor = false;
             // 
             // rbPlan1
             // 
             this.rbPlan1.AutoSize = true;
-            this.rbPlan1.Location = new System.Drawing.Point(191, 121);
+            this.rbPlan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan1.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbPlan1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbPlan1.Location = new System.Drawing.Point(191, 128);
             this.rbPlan1.Name = "rbPlan1";
-            this.rbPlan1.Size = new System.Drawing.Size(148, 19);
+            this.rbPlan1.Size = new System.Drawing.Size(148, 16);
             this.rbPlan1.TabIndex = 80;
             this.rbPlan1.TabStop = true;
             this.rbPlan1.Text = "36 Cuotas - 23% interes";
-            this.rbPlan1.UseVisualStyleBackColor = true;
+            this.rbPlan1.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(471, 436);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 17);
+            this.label9.Size = new System.Drawing.Size(55, 19);
             this.label9.TabIndex = 75;
             this.label9.Text = "Total $";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(442, 405);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 17);
+            this.label8.Size = new System.Drawing.Size(81, 19);
             this.label8.TabIndex = 74;
             this.label8.Text = "SubTotal $";
             // 
@@ -174,10 +183,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(77, 157);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 15);
+            this.label7.Size = new System.Drawing.Size(99, 19);
             this.label7.TabIndex = 67;
             this.label7.Text = "Descuento %";
             // 
@@ -193,20 +203,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(77, 126);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 15);
+            this.label6.Size = new System.Drawing.Size(72, 19);
             this.label6.TabIndex = 65;
             this.label6.Text = "AutoPlan";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(323, 26);
+            this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(332, 19);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.Size = new System.Drawing.Size(49, 19);
             this.label4.TabIndex = 64;
             this.label4.Text = "Fecha";
             // 
@@ -222,20 +234,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(77, 95);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 15);
+            this.label3.Size = new System.Drawing.Size(76, 19);
             this.label3.TabIndex = 61;
             this.label3.Text = "Vendedor";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(77, 66);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 15);
+            this.label2.Size = new System.Drawing.Size(57, 19);
             this.label2.TabIndex = 60;
             this.label2.Text = "Cliente";
             // 
@@ -262,22 +276,26 @@
             // lblNroFactura
             // 
             this.lblNroFactura.AutoSize = true;
-            this.lblNroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNroFactura.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNroFactura.Location = new System.Drawing.Point(63, 18);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
-            this.lblNroFactura.Size = new System.Drawing.Size(91, 17);
+            this.lblNroFactura.Size = new System.Drawing.Size(98, 19);
             this.lblNroFactura.TabIndex = 57;
             this.lblNroFactura.Text = "Nro. Factura:";
             // 
             // btnSalir
             // 
+            this.btnSalir.AutoSize = true;
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSalir.Location = new System.Drawing.Point(599, 485);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(75, 25);
             this.btnSalir.TabIndex = 83;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmDetallesFactura
