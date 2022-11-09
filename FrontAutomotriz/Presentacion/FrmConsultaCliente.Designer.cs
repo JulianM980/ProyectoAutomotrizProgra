@@ -45,6 +45,9 @@
             // 
             this.dgvClientes.AllowUserToAddRows = false;
             this.dgvClientes.AllowUserToDeleteRows = false;
+            this.dgvClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombre,
@@ -99,6 +102,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.AutoSize = true;
             this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -113,6 +117,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,6 +142,7 @@
             // 
             // btnRefrescar
             // 
+            this.btnRefrescar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefrescar.AutoSize = true;
             this.btnRefrescar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
