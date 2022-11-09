@@ -16,17 +16,20 @@ namespace FrontAutomotriz.Presentacion
     public partial class FrmModificarCliente : Form
     {
         private Cliente oCliente;
-        public FrmModificarCliente(int idCliente)
+        public FrmModificarCliente(int idCliente,int idDatos)
         {
             InitializeComponent();
             oCliente = new Cliente();
             oCliente.IdCliente = idCliente;
+            oCliente.Id = idDatos;
         }
         private async void FrmModificarCliente_Load(object sender, EventArgs e)
         {
             await CargarTiposClientes();
             await CargarTiposDocumentos();
             await CargarCliente(oCliente.IdCliente);
+            iconPictureBox2.Parent = panelSuperior;
+            lblTitulo.Parent = panelSuperior;
         }
         private async Task CargarTiposClientes()
         {
@@ -73,6 +76,60 @@ namespace FrontAutomotriz.Presentacion
 
         private async void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (txtNombre.Text.Equals("")) {
+                MessageBox.Show("No puede ingresar un cliente sin nombre");
+                return;
+            }
+            if (txtApellido.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar un cliente sin apellido");
+                return;
+            }
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar un cliente sin documento");
+                return;
+            }
+            else if (!int.TryParse(txtNroDoc.Text, out _)) {
+                MessageBox.Show("No puede ingresar letras como documento");
+                return;
+            }
+            if (cbTipoCliente.Text.Equals("")) {
+                MessageBox.Show("Debe seleccionar un tipo de cliente");
+                return;
+            }
+            if (cbTipoDoc.Text.Equals("")) {
+                MessageBox.Show("Debe seleccionar un tipo de documento");
+                return;
+            }
+            if (txtCalle.Text.Equals("")) {
+                MessageBox.Show("Debe seleccionar un tipo de documento");
+                return;
+            }
+            if (txtAltura.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar una altura vacia");
+                return;
+            }
+            else if (!int.TryParse(txtAltura.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como altura de direccion");
+                return;
+            }
+            if (txtCodigoPostal.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar una codigo postal vacio");
+                return;
+            }
+            else if (!int.TryParse(txtCodigoPostal.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como codigo postal");
+                return;
+            }
+            if (txtTelefono.Text.Equals("") && txtEmail.Text.Equals("")) {
+                MessageBox.Show("Debe ingresar un telefono o un email para poder contactarnos con usted");
+                return;
+            }
             oCliente.Nombre = txtNombre.Text;
             oCliente.Apellido = txtApellido.Text;
             oCliente.NombreCompleto = txtNombre.Text + txtApellido.Text;
@@ -82,8 +139,9 @@ namespace FrontAutomotriz.Presentacion
             oCliente.Calle = txtCalle.Text;
             oCliente.Altura = Convert.ToInt32(txtAltura.Text);
             oCliente.CodPostal = Convert.ToInt32(txtCodigoPostal.Text);
-            oCliente.NroTel = txtTelefono.Text;
-            oCliente.Email = txtEmail.Text;
+            oCliente.NroTel = txtTelefono.Text == "" ? "-":txtTelefono.Text;
+            oCliente.Email = txtEmail.Text == "" ? "-" : txtEmail.Text;
+            oCliente.Estado = true;
 
             bool save = await ActualizarCliente(oCliente);
 
@@ -104,21 +162,16 @@ namespace FrontAutomotriz.Presentacion
             return result.Equals("true");
         }
 
-<<<<<<< HEAD
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
-=======
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
         }
+        
 
-        private void iconPictureBox2_Click(object sender, EventArgs e)
+        public void iconPictureBox2_Click(object sender, EventArgs e)
         {
             DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes) this.Dispose();
->>>>>>> 4c3df0388c0460ba7871b78b02a346ec6003c3a0
         }
     }
 }

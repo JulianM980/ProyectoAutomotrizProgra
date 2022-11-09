@@ -48,7 +48,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.btnNCliente = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboCliente = new System.Windows.Forms.ComboBox();
@@ -79,7 +78,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(88, 31);
-            this.btnAceptar.TabIndex = 52;
+            this.btnAceptar.TabIndex = 27;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -95,7 +94,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(88, 31);
-            this.btnCancelar.TabIndex = 51;
+            this.btnCancelar.TabIndex = 26;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -109,7 +108,7 @@
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 16);
-            this.label9.TabIndex = 50;
+            this.label9.TabIndex = 24;
             this.label9.Text = "Total $";
             // 
             // label8
@@ -121,7 +120,7 @@
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 16);
-            this.label8.TabIndex = 49;
+            this.label8.TabIndex = 22;
             this.label8.Text = "SubTotal $";
             // 
             // txtTotal
@@ -132,7 +131,7 @@
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(135, 23);
-            this.txtTotal.TabIndex = 48;
+            this.txtTotal.TabIndex = 25;
             // 
             // txtSubTotal
             // 
@@ -142,7 +141,7 @@
             this.txtSubTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSubTotal.Name = "txtSubTotal";
             this.txtSubTotal.Size = new System.Drawing.Size(135, 23);
-            this.txtSubTotal.TabIndex = 47;
+            this.txtSubTotal.TabIndex = 23;
             // 
             // btnAgregar
             // 
@@ -154,7 +153,7 @@
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(88, 31);
-            this.btnAgregar.TabIndex = 46;
+            this.btnAgregar.TabIndex = 20;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -165,7 +164,7 @@
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(143, 23);
-            this.txtCantidad.TabIndex = 45;
+            this.txtCantidad.TabIndex = 19;
             // 
             // cboProducto
             // 
@@ -175,7 +174,7 @@
             this.cboProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboProducto.Name = "cboProducto";
             this.cboProducto.Size = new System.Drawing.Size(276, 23);
-            this.cboProducto.TabIndex = 44;
+            this.cboProducto.TabIndex = 18;
             // 
             // dgvDetalle
             // 
@@ -196,7 +195,7 @@
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.Size = new System.Drawing.Size(752, 173);
-            this.dgvDetalle.TabIndex = 43;
+            this.dgvDetalle.TabIndex = 21;
             this.dgvDetalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalle_CellContentClick);
             // 
             // ColId
@@ -242,7 +241,7 @@
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 16);
-            this.label7.TabIndex = 42;
+            this.label7.TabIndex = 12;
             this.label7.Text = "Descuento %";
             // 
             // txtDescuento
@@ -251,7 +250,7 @@
             this.txtDescuento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(234, 23);
-            this.txtDescuento.TabIndex = 41;
+            this.txtDescuento.TabIndex = 13;
             // 
             // label6
             // 
@@ -261,7 +260,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 16);
-            this.label6.TabIndex = 40;
+            this.label6.TabIndex = 8;
             this.label6.Text = "AutoPlan";
             // 
             // label4
@@ -272,7 +271,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
-            this.label4.TabIndex = 35;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Fecha";
             // 
             // dtpFecha
@@ -282,22 +281,7 @@
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(233, 23);
-            this.dtpFecha.TabIndex = 34;
-            // 
-            // btnNCliente
-            // 
-            this.btnNCliente.AutoSize = true;
-            this.btnNCliente.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnNCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNCliente.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnNCliente.Location = new System.Drawing.Point(399, 72);
-            this.btnNCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnNCliente.Name = "btnNCliente";
-            this.btnNCliente.Size = new System.Drawing.Size(174, 31);
-            this.btnNCliente.TabIndex = 33;
-            this.btnNCliente.Text = "Nuevo Cliente";
-            this.btnNCliente.UseVisualStyleBackColor = false;
-            this.btnNCliente.Click += new System.EventHandler(this.btnNCliente_Click);
+            this.dtpFecha.TabIndex = 0;
             // 
             // label3
             // 
@@ -307,7 +291,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 16);
-            this.label3.TabIndex = 32;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Vendedor";
             // 
             // label2
@@ -318,26 +302,28 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 16);
-            this.label2.TabIndex = 31;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Cliente";
             // 
             // cboCliente
             // 
+            this.cboCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCliente.FormattingEnabled = true;
             this.cboCliente.Location = new System.Drawing.Point(142, 73);
             this.cboCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(234, 23);
-            this.cboCliente.TabIndex = 30;
+            this.cboCliente.TabIndex = 4;
             // 
             // cboVendedor
             // 
+            this.cboVendedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVendedor.FormattingEnabled = true;
             this.cboVendedor.Location = new System.Drawing.Point(142, 102);
             this.cboVendedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboVendedor.Name = "cboVendedor";
             this.cboVendedor.Size = new System.Drawing.Size(234, 23);
-            this.cboVendedor.TabIndex = 29;
+            this.cboVendedor.TabIndex = 7;
             // 
             // lblNroFactura
             // 
@@ -347,7 +333,7 @@
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
             this.lblNroFactura.Size = new System.Drawing.Size(96, 16);
-            this.lblNroFactura.TabIndex = 28;
+            this.lblNroFactura.TabIndex = 1;
             this.lblNroFactura.Text = "Nro. Factura:";
             // 
             // cboMarca
@@ -358,7 +344,7 @@
             this.cboMarca.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(220, 23);
-            this.cboMarca.TabIndex = 53;
+            this.cboMarca.TabIndex = 15;
             // 
             // label1
             // 
@@ -368,7 +354,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 16);
-            this.label1.TabIndex = 54;
+            this.label1.TabIndex = 14;
             this.label1.Text = "Marca";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -382,7 +368,7 @@
             this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(88, 31);
-            this.btnCargar.TabIndex = 55;
+            this.btnCargar.TabIndex = 16;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
@@ -395,7 +381,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 16);
-            this.label5.TabIndex = 54;
+            this.label5.TabIndex = 17;
             this.label5.Text = "Producto";
             this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -408,7 +394,7 @@
             this.rbPlan1.Location = new System.Drawing.Point(142, 136);
             this.rbPlan1.Name = "rbPlan1";
             this.rbPlan1.Size = new System.Drawing.Size(159, 17);
-            this.rbPlan1.TabIndex = 56;
+            this.rbPlan1.TabIndex = 9;
             this.rbPlan1.TabStop = true;
             this.rbPlan1.Text = "36 Cuotas - 23% interes";
             this.rbPlan1.UseVisualStyleBackColor = false;
@@ -422,7 +408,7 @@
             this.rbPlan2.Location = new System.Drawing.Point(301, 136);
             this.rbPlan2.Name = "rbPlan2";
             this.rbPlan2.Size = new System.Drawing.Size(160, 17);
-            this.rbPlan2.TabIndex = 56;
+            this.rbPlan2.TabIndex = 10;
             this.rbPlan2.TabStop = true;
             this.rbPlan2.Text = "84 Cuotas - 30% Interes";
             this.rbPlan2.UseVisualStyleBackColor = false;
@@ -436,7 +422,7 @@
             this.rbPlan3.Location = new System.Drawing.Point(461, 136);
             this.rbPlan3.Name = "rbPlan3";
             this.rbPlan3.Size = new System.Drawing.Size(167, 17);
-            this.rbPlan3.TabIndex = 56;
+            this.rbPlan3.TabIndex = 11;
             this.rbPlan3.TabStop = true;
             this.rbPlan3.Text = "120 Cuotas - 34% Cuotas";
             this.rbPlan3.UseVisualStyleBackColor = false;
@@ -504,7 +490,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.btnNCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cboCliente);
@@ -541,7 +526,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Button btnNCliente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboCliente;

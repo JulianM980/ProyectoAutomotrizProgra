@@ -114,6 +114,23 @@ namespace AutomotrizApi.Controllers
 
             }
         }
+        [HttpGet("/ultimoId")]
+        public IActionResult GetUltimoId()
+        {
+            int resultado = 0;
+            try
+            {
+                resultado = dataApi.UltimoId();
+                return Ok(resultado);
+
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error interrno. Intente Luego");
+
+            }
+        }
         [HttpPost("/facturas")]
         public IActionResult PostFactura(Factura f) {
             try

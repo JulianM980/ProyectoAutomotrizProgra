@@ -64,9 +64,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan3.AutoSize = true;
             this.rbPlan3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan3.Enabled = false;
             this.rbPlan3.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbPlan3.Location = new System.Drawing.Point(487, 145);
+            this.rbPlan3.Location = new System.Drawing.Point(487, 128);
             this.rbPlan3.Name = "rbPlan3";
             this.rbPlan3.Size = new System.Drawing.Size(154, 16);
             this.rbPlan3.TabIndex = 82;
@@ -80,9 +81,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan2.AutoSize = true;
             this.rbPlan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan2.Enabled = false;
             this.rbPlan2.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbPlan2.Location = new System.Drawing.Point(339, 145);
+            this.rbPlan2.Location = new System.Drawing.Point(339, 128);
             this.rbPlan2.Name = "rbPlan2";
             this.rbPlan2.Size = new System.Drawing.Size(148, 16);
             this.rbPlan2.TabIndex = 81;
@@ -96,22 +98,24 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.rbPlan1.AutoSize = true;
             this.rbPlan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.rbPlan1.Enabled = false;
             this.rbPlan1.Font = new System.Drawing.Font("Nirmala UI Semilight", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rbPlan1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbPlan1.Location = new System.Drawing.Point(191, 145);
+            this.rbPlan1.Location = new System.Drawing.Point(191, 128);
             this.rbPlan1.Name = "rbPlan1";
             this.rbPlan1.Size = new System.Drawing.Size(148, 16);
             this.rbPlan1.TabIndex = 80;
             this.rbPlan1.TabStop = true;
             this.rbPlan1.Text = "36 Cuotas - 23% interes";
             this.rbPlan1.UseVisualStyleBackColor = false;
+            this.rbPlan1.CheckedChanged += new System.EventHandler(this.rbPlan1_CheckedChanged);
             // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(471, 494);
+            this.label9.Location = new System.Drawing.Point(471, 436);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 19);
@@ -123,7 +127,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(442, 459);
+            this.label8.Location = new System.Drawing.Point(442, 405);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 19);
@@ -134,20 +138,20 @@
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(539, 492);
+            this.txtTotal.Location = new System.Drawing.Point(539, 434);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(135, 25);
+            this.txtTotal.Size = new System.Drawing.Size(135, 23);
             this.txtTotal.TabIndex = 73;
             // 
             // txtSubTotal
             // 
             this.txtSubTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSubTotal.Enabled = false;
-            this.txtSubTotal.Location = new System.Drawing.Point(539, 457);
+            this.txtSubTotal.Location = new System.Drawing.Point(539, 403);
             this.txtSubTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(135, 25);
+            this.txtSubTotal.Size = new System.Drawing.Size(135, 23);
             this.txtSubTotal.TabIndex = 72;
             // 
             // dgvDetalle
@@ -163,11 +167,11 @@
             this.ColCantidad,
             this.ColPrecioUnitario,
             this.ColId});
-            this.dgvDetalle.Location = new System.Drawing.Point(52, 224);
+            this.dgvDetalle.Location = new System.Drawing.Point(52, 198);
             this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.ReadOnly = true;
-            this.dgvDetalle.Size = new System.Drawing.Size(622, 196);
+            this.dgvDetalle.Size = new System.Drawing.Size(622, 173);
             this.dgvDetalle.TabIndex = 68;
             // 
             // ColProducto
@@ -203,7 +207,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(77, 178);
+            this.label7.Location = new System.Drawing.Point(77, 157);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 19);
@@ -215,10 +219,10 @@
             this.txtDescuento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.txtDescuento.Enabled = false;
-            this.txtDescuento.Location = new System.Drawing.Point(191, 173);
+            this.txtDescuento.Location = new System.Drawing.Point(191, 153);
             this.txtDescuento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.Size = new System.Drawing.Size(234, 25);
+            this.txtDescuento.Size = new System.Drawing.Size(234, 23);
             this.txtDescuento.TabIndex = 66;
             // 
             // label6
@@ -227,7 +231,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(77, 143);
+            this.label6.Location = new System.Drawing.Point(77, 126);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 19);
@@ -239,7 +243,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(332, 22);
+            this.label4.Location = new System.Drawing.Point(332, 19);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 19);
@@ -250,17 +254,17 @@
             // 
             this.dtpFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFecha.Enabled = false;
-            this.dtpFecha.Location = new System.Drawing.Point(389, 22);
+            this.dtpFecha.Location = new System.Drawing.Point(389, 19);
             this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(233, 25);
+            this.dtpFecha.Size = new System.Drawing.Size(233, 23);
             this.dtpFecha.TabIndex = 63;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(77, 108);
+            this.label3.Location = new System.Drawing.Point(77, 95);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 19);
@@ -271,7 +275,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(77, 75);
+            this.label2.Location = new System.Drawing.Point(77, 66);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 19);
@@ -284,10 +288,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cboCliente.Enabled = false;
             this.cboCliente.FormattingEnabled = true;
-            this.cboCliente.Location = new System.Drawing.Point(191, 70);
+            this.cboCliente.Location = new System.Drawing.Point(191, 62);
             this.cboCliente.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboCliente.Name = "cboCliente";
-            this.cboCliente.Size = new System.Drawing.Size(234, 25);
+            this.cboCliente.Size = new System.Drawing.Size(234, 23);
             this.cboCliente.TabIndex = 59;
             // 
             // cboVendedor
@@ -296,17 +300,17 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cboVendedor.Enabled = false;
             this.cboVendedor.FormattingEnabled = true;
-            this.cboVendedor.Location = new System.Drawing.Point(191, 103);
+            this.cboVendedor.Location = new System.Drawing.Point(191, 91);
             this.cboVendedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboVendedor.Name = "cboVendedor";
-            this.cboVendedor.Size = new System.Drawing.Size(234, 25);
+            this.cboVendedor.Size = new System.Drawing.Size(234, 23);
             this.cboVendedor.TabIndex = 58;
             // 
             // lblNroFactura
             // 
             this.lblNroFactura.AutoSize = true;
             this.lblNroFactura.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNroFactura.Location = new System.Drawing.Point(63, 20);
+            this.lblNroFactura.Location = new System.Drawing.Point(63, 18);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
             this.lblNroFactura.Size = new System.Drawing.Size(98, 19);
@@ -320,9 +324,9 @@
             this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(599, 550);
+            this.btnSalir.Location = new System.Drawing.Point(599, 485);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 28);
+            this.btnSalir.Size = new System.Drawing.Size(75, 25);
             this.btnSalir.TabIndex = 83;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -337,10 +341,10 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 39;
-            this.iconPictureBox2.Location = new System.Drawing.Point(682, 12);
+            this.iconPictureBox2.Location = new System.Drawing.Point(682, 11);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(39, 45);
+            this.iconPictureBox2.Size = new System.Drawing.Size(39, 40);
             this.iconPictureBox2.TabIndex = 84;
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
@@ -354,19 +358,19 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 39;
-            this.iconPictureBox1.Location = new System.Drawing.Point(635, 12);
+            this.iconPictureBox1.Location = new System.Drawing.Point(635, 11);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(39, 45);
+            this.iconPictureBox1.Size = new System.Drawing.Size(39, 40);
             this.iconPictureBox1.TabIndex = 85;
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // FrmDetallesFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 602);
+            this.ClientSize = new System.Drawing.Size(734, 531);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.btnSalir);

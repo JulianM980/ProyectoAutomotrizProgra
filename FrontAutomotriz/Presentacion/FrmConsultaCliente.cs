@@ -44,7 +44,8 @@ namespace FrontAutomotriz.Presentacion
                     dgvClientes.Rows.Add(new object[] {
                         cliente.NombreCompleto,
                         cliente.TipoCliente.Tipo,
-                        cliente.IdCliente
+                        cliente.IdCliente,
+                        cliente.Id
                     });
                 }
             }
@@ -62,15 +63,18 @@ namespace FrontAutomotriz.Presentacion
 
         private async void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvClientes.CurrentCell.ColumnIndex == 3) {
-                new FrmModificarCliente(Convert.ToInt16(dgvClientes.CurrentRow.Cells["colId"].Value)).ShowDialog();
+            if (dgvClientes.CurrentCell.ColumnIndex == 4) {
+                int idCliente = Convert.ToInt16(dgvClientes.CurrentRow.Cells["colIdCliente"].Value);
+                int idDatos = Convert.ToInt16(dgvClientes.CurrentRow.Cells["colId"].Value);
+
+                new FrmModificarCliente(idCliente,idDatos).ShowDialog();
             }
-            if (dgvClientes.CurrentCell.ColumnIndex == 4)
+            if (dgvClientes.CurrentCell.ColumnIndex == 5)
             {
                 DialogResult msg = MessageBox.Show("Desea dar de baja este cliente?","Eliminando cliente",MessageBoxButtons.YesNo);
                 if (msg == DialogResult.Yes) {
 
-                    bool save = await BajaDeCliente(Convert.ToInt16(dgvClientes.CurrentRow.Cells["colId"].Value));
+                    bool save = await BajaDeCliente(Convert.ToInt16(dgvClientes.CurrentRow.Cells["colIdCliente"].Value));
                     if (save)
                     {
                         MessageBox.Show("Cliente dado de baja");

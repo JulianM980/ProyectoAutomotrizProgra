@@ -162,5 +162,10 @@ namespace AutomotrizAplicacion.Servicios.Implementaciones
             }
             return vendedores;
         }
+
+        public int UltimoId()
+        {
+            return HelperDB.ObtenerInstancia().ConsultaEscalarSp("ultima_factura","@ultimoId");
+        }
     }
 }

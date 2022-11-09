@@ -57,7 +57,7 @@
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(136, 28);
-            this.btnSalir.TabIndex = 5;
+            this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -83,7 +83,7 @@
             this.txtAnio.Margin = new System.Windows.Forms.Padding(4);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(303, 22);
-            this.txtAnio.TabIndex = 4;
+            this.txtAnio.TabIndex = 0;
             // 
             // label1
             // 
@@ -108,7 +108,7 @@
             this.btnConsultar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(221, 28);
-            this.btnConsultar.TabIndex = 0;
+            this.btnConsultar.TabIndex = 1;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
@@ -131,7 +131,7 @@
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.Size = new System.Drawing.Size(811, 185);
-            this.dgvDetalle.TabIndex = 44;
+            this.dgvDetalle.TabIndex = 0;
             this.dgvDetalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalle_CellContentClick);
             // 
             // ColFactura

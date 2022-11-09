@@ -298,7 +298,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.4": {
+      "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -512,7 +512,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "System.Data.SqlClient": "4.8.4"
+          "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
           "bin/placeholder/AutomotrizAplicacion.dll": {}
@@ -962,10 +962,10 @@
         "version.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.4": {
-      "sha512": "45YflfcVXAu+Tnf0WnZzQIp9iGm+XvSvh8OosYHqax/nW3gV28NBSRvHFZ/IsuwV4JIypYCKBEOVzW+RB5+zgQ==",
+    "System.Data.SqlClient/4.8.5": {
+      "sha512": "fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.4",
+      "path": "system.data.sqlclient/4.8.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1042,7 +1042,7 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.4.nupkg.sha512",
+        "system.data.sqlclient.4.8.5.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1407,24 +1407,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
       "projectName": "FrontAutomotriz",
-      "projectPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
-      "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\FrontAutomotriz\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\FrontAutomotriz.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\FrontAutomotriz\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1438,8 +1433,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
-              "projectPath": "C:\\Users\\usuario\\source\\repos\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
+            "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\TUP\\ProyectoAutomotrizProgra\\AutomotrizAplicacion\\AutomotrizAplicacion.csproj"
             }
           }
         }
@@ -1486,7 +1481,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -88,5 +88,10 @@ namespace FrontAutomotriz.Presentacion
             DialogResult msg = MessageBox.Show("¿Desea cerrar pestaña?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes) this.Dispose();
         }
+
+        private void rbPlan1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

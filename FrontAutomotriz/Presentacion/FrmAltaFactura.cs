@@ -29,12 +29,12 @@ namespace Altas
             await CargarCliente();
             await CargarVendedor();
             await CargarMarcas();
+            await ProximaFactura();
             dtpFecha.Value = DateTime.Now;
             cboCliente.SelectedIndex = -1;
             cboVendedor.SelectedIndex = -1;
             cboMarca.SelectedIndex = -1;
             txtDescuento.Text = "0";
-            //ProximaFactura();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -186,19 +186,18 @@ namespace Altas
             
         }
 
-        //private void ProximaFactura()
-        //{
-        //    int next = HelperDB.ObtenerInstancia().ProximoPresupuesto();
-        //    if (next > 0)
-        //        lblNroFactura.Text = "Presupuesto Nº: " + next.ToString();
-        //    else
-        //        MessageBox.Show("Error de datos. No se puede obtener Nº de presupuesto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //}
-
-        private void btnNCliente_Click(object sender, EventArgs e)
+        private async Task ProximaFactura()
         {
-            new FrmNuevoCliente().ShowDialog();
+            string url = "http://localhost:5197/ultimoId";
+            var result = await ClientSingleton.ObtenerCliente().GetAsync(url);
+            int next = JsonConvert.DeserializeObject<int>(result) + 1 ;
+            if (next > 0)
+                lblNroFactura.Text = "Factura Nº: " + next.ToString();
+            else
+                MessageBox.Show("Error de datos. No se puede obtener Nº de fatura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        
 
         
 

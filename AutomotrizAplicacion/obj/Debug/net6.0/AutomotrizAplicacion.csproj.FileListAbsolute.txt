@@ -11,14 +11,6 @@ D:\Mis documentos\GitHub\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.deps.json
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\AutomotrizAplicacion.pdb
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Windows.Forms.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\Accessibility.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Deployment.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Runtime.Serialization.Formatters.Soap.dll
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Windows.Forms.xml
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\Accessibility.xml
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Deployment.xml
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\bin\Debug\net6.0\System.Runtime.Serialization.Formatters.Soap.xml
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.Properties.Resources.resources
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.GenerateResource.cache
@@ -26,7 +18,6 @@ C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\D
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfoInputs.cache
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.AssemblyInfo.cs
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.csproj.CopyComplete
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\refint\AutomotrizAplicacion.dll
 C:\Users\Usuario\Desktop\TUP\ProyectoAutomotrizProgra\AutomotrizAplicacion\obj\Debug\net6.0\AutomotrizAplicacion.pdb

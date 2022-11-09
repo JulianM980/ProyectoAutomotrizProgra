@@ -8,7 +8,6 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace RecetasSLN.datos
 {
@@ -93,7 +92,7 @@ namespace RecetasSLN.datos
             }
             catch (Exception)
             {
-                MessageBox.Show("Error en base de datos");
+                return resultado;
             }
             finally {
                 if (cnn != null && cnn.State == ConnectionState.Open) {
@@ -122,7 +121,7 @@ namespace RecetasSLN.datos
             catch (Exception)
             {
 
-                MessageBox.Show("Error en base de datos");
+                //MessageBox.Show("Error en base de datos");
             }
             finally
             {
@@ -154,7 +153,7 @@ namespace RecetasSLN.datos
             catch (Exception)
             {
 
-                MessageBox.Show("Error en base de datos");
+                //MessageBox.Show("Error en base de datos");
                 resultado = false;
             }
             finally

@@ -63,6 +63,9 @@ namespace AutomotrizAplicacion.Fachada
             return dao.ObtenerUna(id);
         }
 
-        
+        public int UltimoId()
+        {
+            return dao.UltimoId();
+        }
     }
 }

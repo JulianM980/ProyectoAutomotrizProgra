@@ -57,5 +57,12 @@ namespace FrontAutomotriz.Presentacion
             var aux = JsonConvert.DeserializeObject<bool>(result);
             return aux.Equals(true);
         }
+
+        private void FrmLogin1_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Parent = pictureBox1;
+            lblContraseña.Parent = pictureBox1;
+            lblError.Parent = pictureBox1;
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace AutomotrizAplicacion.Servicios.Interfaces
         List<Producto> ObtenerProductos(string marca);
         List<Marca> ObtenerMarcas();
         List<Vendedor> ObtenerVendedores();
-
+        int UltimoId();
         bool Insertar(Factura factura);
         bool Actualizar(Factura factura);
         bool BajaLogica(int idFactura);

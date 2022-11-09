@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.97625cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.33375cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>4.96063cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -355,9 +355,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>1.3462cm</Top>
-        <Left>3.03953cm</Left>
+        <Left>1.79599cm</Left>
         <Height>1.2cm</Height>
-        <Width>12.5cm</Width>
+        <Width>16.27063cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -368,7 +368,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.87184in</Width>
+  <Width>7.51767in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -396,7 +396,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>FACTURAS Y TOTALES</Value>
+                  <Value>CLIENTES</Value>
                   <Style>
                     <FontFamily>Roboto</FontFamily>
                     <FontSize>18pt</FontSize>
@@ -412,7 +412,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.78458cm</Top>
-          <Left>5.28787cm</Left>
+          <Left>7.00766cm</Left>
           <Height>0.97042cm</Height>
           <Width>6.86562cm</Width>
           <ZIndex>1</ZIndex>

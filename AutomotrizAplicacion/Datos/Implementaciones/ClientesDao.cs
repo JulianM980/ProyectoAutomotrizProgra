@@ -69,6 +69,7 @@ namespace AutomotrizAplicacion.Datos.Implementaciones
             foreach (DataRow row in dt.Rows)
             {
                 Cliente cliente = new Cliente();
+                cliente.Id = Convert.ToInt32(row["idDatosPersonales"]);
                 cliente.IdCliente = Convert.ToInt16(row["idCliente"]);
                 cliente.TipoCliente.Id = Convert.ToInt16(row["idTipoCliente"]);
                 cliente.TipoCliente.Tipo = row["nombre_tipo"].ToString();

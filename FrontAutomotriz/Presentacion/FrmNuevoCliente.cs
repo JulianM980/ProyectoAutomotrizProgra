@@ -27,6 +27,8 @@ namespace Altas.Forms
         {
             await CargarTiposClientes();
             await CargarTiposDocumentos();
+            iconPictureBox2.Parent = panelSuperior;
+            lblTitulo.Parent = panelSuperior;
         }
         #region METODOS PRIVADOS
         private async Task CargarTiposClientes() {
@@ -57,6 +59,66 @@ namespace Altas.Forms
 
         private async void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (txtNombre.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar un cliente sin nombre");
+                return;
+            }
+            if (txtApellido.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar un cliente sin apellido");
+                return;
+            }
+            if (txtNroDoc.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar un cliente sin documento");
+                return;
+            }
+            else if (!int.TryParse(txtNroDoc.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como documento");
+                return;
+            }
+            if (cbTipoCliente.Text.Equals(""))
+            {
+                MessageBox.Show("Debe seleccionar un tipo de cliente");
+                return;
+            }
+            if (cbTipoDoc.Text.Equals(""))
+            {
+                MessageBox.Show("Debe seleccionar un tipo de documento");
+                return;
+            }
+            if (txtCalle.Text.Equals(""))
+            {
+                MessageBox.Show("Debe ingresar una calle");
+                return;
+            }
+            if (txtAltura.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar una altura vacia");
+                return;
+            }
+            else if (!int.TryParse(txtAltura.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como altura de direccion");
+                return;
+            }
+            if (txtCodigoPostal.Text.Equals(""))
+            {
+                MessageBox.Show("No puede ingresar una codigo postal vacio");
+                return;
+            }
+            else if (!int.TryParse(txtCodigoPostal.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como codigo postal");
+                return;
+            }
+            if (txtTelefono.Text.Equals("") && txtEmail.Text.Equals(""))
+            {
+                MessageBox.Show("Debe ingresar un telefono o un email para poder contactarnos con usted");
+                return;
+            }
             oCliente.Nombre = txtNombre.Text;
             oCliente.Apellido = txtApellido.Text;
             oCliente.NombreCompleto = txtNombre.Text + txtApellido.Text;
@@ -93,10 +155,7 @@ namespace Altas.Forms
 
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
-        }
+        
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
