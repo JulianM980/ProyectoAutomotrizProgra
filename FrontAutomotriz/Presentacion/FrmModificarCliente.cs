@@ -103,5 +103,10 @@ namespace FrontAutomotriz.Presentacion
             var result = await ClientSingleton.ObtenerCliente().PutAsync(url,bodyContent);
             return result.Equals("true");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
+        }
     }
 }
